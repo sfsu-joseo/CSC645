@@ -1,1 +1,2 @@
-# LAB 1: Python Basics I
+### LAB 0: Getting Started with Python
+
