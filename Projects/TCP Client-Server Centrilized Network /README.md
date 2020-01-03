@@ -1,21 +1,12 @@
-# CSC645 Spring 2020 Computer Networks
-Welcome to Computer Networks!. Please modify this README file with the following info: 
-1. Your name, and student id here
-2. Update this table of assignments. Set to done after one of the assignments is completed:
+# TCP Client-Server Network 
 
-| Assignment               | Completed     |
-| ------------------------ | ------------- |
-| Lab 0                    | not done yet  |
-| Lab 1                    | not done yet  |
-| Lab 2                    | not done yet  |
-| Lab 3                    | not done yet  |
-| Lab 4                    | not done yet  |
-| Lab 5                    | not done yet  |
-| Lab 6                    | not done yet  |
-| Lab 7                    | not done yet  |
-| Lab 8                    | not done yet  |
-| Lab 9                    | not done yet  |
-| TCP Client/Server Network| not done yet  |
-| P2P Decentrized Network  | not done yet  |
-| EC1                      | not done yet  |
-| EC2                      | not done yet  |
+Please use this README file to provide the following documentation for this project:
+
+* Your name and student id
+* General description of the project (a few sentences)
+* If you used external Python modules/libraries. Provide a requeriments.txt file  
+* Python version and compatibility issues (if any)
+* Clear and specific instructions about how to run your project. If your project does not run or contains errors, you'll get a 0 in the project no matter how much work you put on it. So, test your code properly and make sure that it runs without errors.
+* A few sentences about all the challenges you found during the implementation of this project and how you overcame them. Please be honest here. 
+
+## Note that failure to provide the above docs will result in a 30% deduction in your final grade for this project. 
