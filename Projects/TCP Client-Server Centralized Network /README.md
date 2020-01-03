@@ -10,3 +10,4 @@ Please use this README file to provide the following documentation for this proj
 * A few sentences about all the challenges you found during the implementation of this project and how you overcame them. Please be honest here. 
 
 ## Note that failure to provide the above docs will result in a 30% deduction in your final grade for this project. 
+
