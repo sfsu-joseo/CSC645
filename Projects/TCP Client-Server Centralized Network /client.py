@@ -38,7 +38,7 @@ class Client(object):
 	def connect(self, host="127.0.0.1", port=12000):
         """
         TODO: Connects to a server. Implements exception handler if connection is resetted. 
-	          Then retrieves the cliend id assigned from server, and sets 	
+	      Then retrieves the cliend id assigned from server, and sets 	
         :param host: 
         :param port: 
         :return: VOID
@@ -65,7 +65,7 @@ class Client(object):
 
 	def close(self):
         """
-		TODO: close the client socket
+        TODO: close the client socket
         :return: VOID
         """
         pass
