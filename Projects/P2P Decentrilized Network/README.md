@@ -1,3 +1,3 @@
-# P2P Decentralized Network with BitTorrent Protocol 
+# P2P Decentralized Network 
 
 
