@@ -1,4 +1,4 @@
-# TCP Client-Server Network 
+# TCP Centralized Client-Server Network 
 
 Please use this README file to provide the following documentation for this project:
 
