@@ -20,6 +20,8 @@ Welcome to Computer Networks!. Please modify this README file with the following
 | EC1                      | not done yet  |
 | EC2                      | not done yet  |
 
+## Please read carefully all the projects, labs, and extracredit assignments guidelines described in this README file. Failure to follow them, may affect negatively your grade. 
+
 # General Labs Guidelines:
 
 • Read carefully both README files related to labs, and documentation inside .py files. 
@@ -32,7 +34,7 @@ Welcome to Computer Networks!. Please modify this README file with the following
 
 • In all labs, you must implement only the parts marked as TODO. Some parts of the labs will be already implemented by the instructor. If you modify those parts, it may affect negatively your grade in that lab
 
-• Some labs contain unit test, so you can test if your output is correct before submitting. For labs that do not contain unit tests, sample output or additional intructions will be provided in the README file located in each lab folder. 
+• Some labs contain unit tests, so you can test if your output is correct before submitting. For labs that do not contain unit tests, sample output or additional intructions will be provided in the README file located in each lab folder. 
 
 • Labs are graded based on their completness and correctness. 
 
