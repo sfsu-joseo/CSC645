@@ -35,7 +35,7 @@ class Client(object):
 		return self.clientid
 
     
-	def connect(self, host="127.0.0.1", port=12000):
+    def connect(self, host="127.0.0.1", port=12000):
         """
         TODO: Connects to a server. Implements exception handler if connection is resetted. 
 	      Then retrieves the cliend id assigned from server, and sets 	
@@ -46,7 +46,7 @@ class Client(object):
         pass
 		
 	
-	def send(self, data):
+    def send(self, data):
         """
         TODO: Serializes and then sends data to server
         :param data:
@@ -60,10 +60,10 @@ class Client(object):
         :param MAX_BUFFER_SIZE: Max allowed allocated memory for this data
         :return: the deserialized data.
         """
-        pass
+        return None
         
 
-	def close(self):
+    def close(self):
         """
         TODO: close the client socket
         :return: VOID
