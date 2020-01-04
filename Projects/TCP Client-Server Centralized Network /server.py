@@ -67,7 +67,7 @@ class Server(object):
         pass
 
 
-    def _receive(self, client_socket, MAX_BUFFER_SIZE=4096):
+    def receive(self, client_socket, MAX_BUFFER_SIZE=4096):
         """
         TODO: Deserializes the data with pickle
         :param client_socket:
@@ -76,7 +76,7 @@ class Server(object):
         """
         return None
 
-    def _send_client_id(self, clientsocket):
+    def send_client_id(self, clientsocket):
         """
         Already implemented for you
         :param clientsocket:
