@@ -40,7 +40,7 @@ class ClientHandler(object):
         """
         menu = Menu()
         data = {'menu': menu}
-        self.server.send(data)
+        self.server.send(self.clientsocket, data)
 
     def process_options(self):
         """
