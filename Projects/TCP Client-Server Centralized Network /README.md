@@ -39,12 +39,27 @@ This project consist in two main entities, the server and the client. Server and
 
 the files client_handler.py, and menu.py must be located in the same directory as the server.py file. The file client_helper.py must be located in the same directory as the client.py file. 
 
-Running the server: 
+Additionally, This program must be compatible with the following OS architectures: Linux, Windows and macOS
+
+
+Open a terminal in machine X and navigate to the directory where server.py is located. Then execute the following commands:
 
 ```
-python server.py # python 2 version 
-python3 server.py # python 3 version 
+python server.py # if python 2 version 
+python3 server.py # if python 3 version 
 ```
+Take note of the server ip address in the LAN, so you can connect your clients to the server. 
+
+Open a terminal in machine Y and navigate to the directory where client.py is located. Then execute the following commands:
+
+```
+python client.py # if python 2 version 
+python3 client.py # if python 3 version 
+```
+
+
+
+
 
 
 
