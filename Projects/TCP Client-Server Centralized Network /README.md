@@ -11,9 +11,9 @@ Please use this README file to provide the following documentation for this proj
 
 ## Note that failure to provide the above docs will result in a 30% deduction in your final grade for this project. 
 
-## Project Description:
+## Project Description and Detailed Guidelines (must read)
 
-A pdf file with all the detailed guidelines about this project can be found on iLearn. Here, we describe the most important features of this project.
+Detailed guidelines about this project can be found in this file. Failure to follow them may result in a bad grade in your project. Take this into consideration. Please read them carefully, and don't hesitate to ask the instructor for clarification if needed. 
 
 The project goal is to create a basic server-client architecture network to provide basic functionalites/services to multiple clients. and explained in detail below.  
  
