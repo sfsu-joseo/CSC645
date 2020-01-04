@@ -25,7 +25,7 @@ You can implement this project either in both python 2 or 3 versions. However, y
 
 ## Project Template. 
 
-This project template consist in five files that are described in detail below: 
+This project template consist in five classes that are described in detail below: 
 
 ### Server 
 
@@ -43,6 +43,14 @@ IP Address: 127.0.0.1
 port listening: 12000
 Waiting for connections...
 ```
+# ClientHandler
+
+The client handler class is located in thee machine that is running the server. It is in charge of processing all the requests sent by clients, that needs to be processed by the server. It uses the server methods to send responses.  
+
+# Menu: 
+
+The menu class is located in the machine that is running the server, and provides the menu implementation, and all the options including user input implementation. 
+
 
 ### Client
 
@@ -67,12 +75,36 @@ Options Available:
 1. Get user list
 2. Sent a message
 3. Get my messages
-4. Create a new channel
-5. Chat in a channel with your friends
-6. Diconnect from server
+4. Create a new chat room
+5. Join an existing chat room
+6. Disconnect from server
 
 Your option <enter a number>:
 ```
+
+In the above example, the client connects to a server listening at 127.0.0.1/12000. Once the server accepts this client, the server assign and send a client id to this client. Once the server acknowledges that the client received the client id assigned to it, the handshake process is done. Finally, the client request the menu from the server, the server sends it, and the client shows the menu to the user waiting for the user input. 
+
+# Menu Options With Examples: 
+
+  * Option 1. Get User List 
+   
+  When the user selects this option the client sends a request to the server asking for a list of all the users connected to    it. The server sends that list, and the users are show in console
+  
+  ```
+  Your option <enter a number>: 1
+  Users in server: Jose:2345, Nina:8763, Alice:1234, John:4566
+  ```
+  The user format is <username:client_id>
+  
+  * Option 2. Sent a message
+  
+
+# ClientHelper
+
+The client helper is located in the machine where the client is running, it provides some services to the client to help with user interaction, and handle menu options on the client side. It is executed by the client. 
+
+
+
 
 
 ## Running the project, 
