@@ -15,29 +15,8 @@ Please use this README file to provide the following documentation for this proj
 
 A pdf file with all the detailed guidelines about this project can be found on iLearn. Here, we describe the most important features of this project.
 
-The project goal is to create a basic server-client architecture network to provide basic functionalites/services to multiple clients. Those services ilustrated in the following menu, and explained in detail below.  
+The project goal is to create a basic server-client architecture network to provide basic functionalites/services to multiple clients. and explained in detail below.  
  
-
-```
-****** TCP CHAT ******
------------------------
-Client id: 2345
-Options Available:
-1. Get user list
-2. Sent a message
-3. Get my messages
-4. Create a new channel
-5. Chat in a channel with your friends
-6. Disconnect from server
-```
-
-
-### DDD  
-
-
-
-
-
 The project template provided in this repository is a good starting point, and will save you a lot of time in the implementation of this project. There are some methods that are already implemented by the class instructor in the template. For those methods that are not implemented, they provide starting point instruction about how to implement them. Note: if you decide to use this template, implement code for the parts marked as TODO.
 
 You are not allowed to use any external python module/library other than the ones provided in the template. If I found out that you used additional libraries to complete the project without the instructor approval, you'll get a zero directly in the project.
@@ -48,9 +27,30 @@ You can implement this project either in both python 2 or 3 versions. However, y
 
 This project template consist in five files that are described in detail below: 
 
-* server.py 
-  
-  the server.py file implements the Server class. The server class is in charge of listening for clients requests. 
+### Server 
+
+The server class implements a TCP server socket after executed is put in listening mode waiting for other clients to connect. It must support multiple request at the same time (multiple threaded clients), and needs to take care of race conditions when to avoid write-write conflicts. The server class provides functionalities such as listen for clients, accept new clients, send data using client socket, and receive data from other clients. 
+
+Once a client socket is connected to the server, the server accepts this client socket creating child process of it, and pass it as a parameter to a ClientHandler obkect. The ClientHandler object handles all the hard work done by the server when it needs to process data. 
+
+The following is an example of console output after running the server. 
+
+```
+// server.py script executed in terminal
+$ python server.py
+Server Info
+IP Address: 127.0.0.1
+port listening: 12000
+Waiting for connections...
+```
+
+### Client
+
+The client class implements a TCP client socket that connects to a server socket running in a well know ip adress and port. The client class is in charge of interacting with the user, recopilate the user data, and send it to the server in a request to be processed. 
+
+The following is 
+
+
 
 ## Running the project, 
 
