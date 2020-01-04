@@ -39,6 +39,14 @@ This project consist in two main entities, the server and the client. Server and
 
 the files client_handler.py, and menu.py must be located in the same directory as the server.py file. The file client_helper.py must be located in the same directory as the client.py file. 
 
+Running the server: 
+
+```
+python server.py # python 2 version 
+python3 server.py # python 3 version 
+```
+
+
 
 
 
