@@ -48,8 +48,31 @@ Waiting for connections...
 
 The client class implements a TCP client socket that connects to a server socket running in a well know ip adress and port. The client class is in charge of interacting with the user, recopilate the user data, and send it to the server in a request to be processed. 
 
-The following is 
+The following is an example of console output after running the client until the point that it shows the menu to the user. 
 
+```
+// client.py running in UNIX terminal
+$ python Client.py
+Enter the server IP Address: 127.0.0.1
+Enter the server port: 12000
+Your id key (i.e your name): Nina
+Successfully connected to server with IP: 127.0.0.1 and port: 12000
+Your client info is:
+Client Name: Nina
+Client ID: 50851
+
+****** TCP Message App ******
+-----------------------
+Options Available:
+1. Get user list
+2. Sent a message
+3. Get my messages
+4. Create a new channel
+5. Chat in a channel with your friends
+6. Diconnect from server
+
+Your option <enter a number>:
+```
 
 
 ## Running the project, 
