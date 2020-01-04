@@ -27,7 +27,7 @@ class Server(object):
         """
         # create an INET, STREAMing socket
         self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.clients = [] # list of clients handlers objects handling clients connected to this server. 
+        self.clients = {} # dictionary of clients handlers objects handling clients. format {clientid:client_handler_object}
         # TODO: bind the socket to a public host, and a well-known port
 
 
