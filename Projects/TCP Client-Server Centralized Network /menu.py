@@ -7,16 +7,14 @@
 #                   free to drop this Menu class, and use a version of yours instead.
 # Running:          This class is dependent of other classes.
 # Usage :           menu = Menu() # creates object
-#                   print(menu.get_menu()) # prints the menu
-#                   data = menu.user_data() # captures the data entered by the user
-#
+#                   
 ########################################################################################
 
 class Menu(object):
 
     def __init__(self):
         """
-        Empty constractor. No need to implement.
+        Empty constractor. No need to implement this one
         """
         pass
 
@@ -38,29 +36,68 @@ class Menu(object):
         # TODO: implement your code here
         return menu
 
-    def _option_selected(self):
+    def option1(self):
         """
-        TODO: takes the option selected by the user in the menu
-        :return: the option selected.
-        """
-        option = 0
-        # TODO: your code here.
-        return option
-
-    def user_data(self):
-        """
-        TODO: according to the option passed as a parameter, prepare the data that will be sent to the server.
-        TODO: don't forget to add also the option to the data.
+        TODO: Prepare the user input data for option 1 in the menu
         :param option:
-        :return: a python dictionary representing the data needed to be sent to the server
+        :return: a python dictionary with all the data needed from user in option 1.
         """
         data = {}
-        option = self._option_selected()
-        if 1 <= option <= 6: # validates a valid option
-           data['option'] = option
-           # TODO: implement your code here
+        data['option'] = 1
+        # Your code here.
         return data
 
+    def option2(self):
+        """
+        TODO: Prepare the user input data for option 2 in the menu
+        :param option:
+        :return: a python dictionary with all the data needed from user in option 2.
+        """
+        data = {}
+        data['option'] = 2
+        # Your code here.
+        return data
 
+    def option3(self):
+        """
+        TODO: Prepare the user input data for option 3 in the menu
+        :param option:
+        :return: a python dictionary with all the data needed from user in option 3.
+        """
+        data = {}
+        data['option'] = 3
+        # Your code here.
+        return data
 
+    def option4(self):
+        """
+        TODO: Prepare the user input data for option 4 in the menu
+        :param option:
+        :return: a python dictionary with all the data needed from user in option 4.
+        """
+        data = {}
+        data['option'] = 4
+        # Your code here.
+        return data
 
+    def option5(self):
+        """
+        TODO: Prepare the user input data for option 5 in the menu
+        :param option:
+        :return: a python dictionary with all the data needed from user in option 5.
+        """
+        data = {}
+        data['option'] = 5
+        # Your code here.
+        return data
+
+    def option6(self):
+        """
+        TODO: Prepare the user input data for option 6 in the menu
+        :param option:
+        :return: a python dictionary with all the data needed from user in option 6.
+        """
+        data = {}
+        data['option'] = 6
+        # Your code here.
+        return data
