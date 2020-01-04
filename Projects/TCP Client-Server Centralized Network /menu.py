@@ -1,4 +1,4 @@
-#######################################################################
+#######################################################################################
 # File:             menu.py
 # Author:           Jose Ortiz
 # Purpose:          CSC645 Assigment #1 TCP socket programming
@@ -8,9 +8,9 @@
 # Running:          This class is dependent of other classes.
 # Usage :           menu = Menu() # creates object
 #                   print(menu.get_menu()) # prints the menu
-#                   data = menu.user_data() # captures the option and data selected by the user.
+#                   data = menu.user_data() # captures the data entered by the user
 #
-########################################################################
+########################################################################################
 
 class Menu(object):
 
