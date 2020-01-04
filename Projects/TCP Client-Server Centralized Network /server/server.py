@@ -10,6 +10,7 @@
 #                   Note: Must run the server before the client.
 ########################################################################
 
+from builtins import object
 import socket
 from threading import Thread
 import pickle
@@ -75,13 +76,13 @@ class Server(object):
         """
         return None
 
-    def send_client_id(self, clientsocket):
+    def send_client_id(self, clientsocket, id):
         """
         Already implemented for you
         :param clientsocket:
         :return:
         """
-        clientid = {'clientid': address[1]}
+        clientid = {'clientid': id}
         self.send(clientsocket, clientid)
 
     def client_handler_thread(self, server_instance, clientsocket, address):
