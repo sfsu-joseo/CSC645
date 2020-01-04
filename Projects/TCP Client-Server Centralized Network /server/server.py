@@ -85,7 +85,7 @@ class Server(object):
         clientid = {'clientid': id}
         self.send(clientsocket, clientid)
 
-    def client_handler_thread(self, server_instance, clientsocket, address):
+    def client_handler_thread(self, clientsocket, address):
         """
         Sends the client id assigned to this clientsocket and
         Creates a new ClientHandler object
