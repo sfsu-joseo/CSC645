@@ -98,7 +98,7 @@ The user format is <username:client_id>
   
 * Option 2. Sent a message
 
-When this option is selected, the client sends a request containing the option selected and the message entered by the user, and the recipient id. Once the server receives this requests, it iterates over a list containing all the clients handler objects to match the recipent_id of the message. Finally, the server saves the message in the appropiate handler, and acknowledges the client that the message was succesfully saved. 
+When this option is selected, the client sends a request containing the option selected, the message entered by the user, and the recipient id. Once the server receives this requests, it iterates over a list containing all the clients handler objects to match the recipent_id of the message. Finally, the server saves the message in the appropiate handler, and acknowledges the client that the message was succesfully saved. 
 
 The following is an example of the output provided by this option on the client side. 
 
@@ -110,6 +110,10 @@ Message sent!
 ```
 * Optiom 3. Get my messages
 
+In this option, a user can requests to the server all the unread messages that are pending. This option is easy to implement because all the active client handler objects contain a list of the pending messages to be readed by the owner (clientsocket) of this object. 
+
+The following is the output example, on client side, for this option.
+
 ```
 Your option <enter a number>: 3
 My messages:
@@ -119,6 +123,8 @@ My messages:
 ```
 
 * Optiom 4. Create a new chat room
+
+A user selecting option 4 will create a new chat room for other users to join. It will ask to the user to enter the new chat room id, and sends the request to the server. Once the server acknowledges the request, the client keeps waiting for other members to join the chat. (option 5). Only the owner of the room can close it by entering 'exit'. Once the chat room is closed, the client console will show the user menu again. 
 
 ```
 Your option <enter a number>: 4
@@ -142,6 +148,10 @@ Waiting for other users to join....
 ```
 
 * Optiom 5. Join an existing chat room
+
+A user selecting option 5 will request to the server to be joined into an existing chat room. The user will enter the chat room id that wants to join, it will be sent to the server, the server will register the user into the corresponding chat room, and will acknowledge the client. Once the client is acknowledged, this user can chat with all the users registered in that chat room. Note that once users enter a chat room, they must see all the messages sent after they joined in their own console. Like in a real message app. Users (that are not owners of that chat room) can leave the chat by entering 'bye'. Once a user leaves a chat room, the console, on client side, must show the user menu again.
+
+Below is an example of the joining process. 
 
 ```
 Your option <enter a number>: 5
@@ -173,7 +183,9 @@ Your option <enter a number>:
 
 ```
 
+* Option 6. Disconnect from server
 
+A user selecting this option will requests to be disconnected from the server. The client sends the request to the server, then the server performs a cleanup of all the data related to that client in the server, and finally close the connection with that client socket. In addition, you also have the option to disconnect the client on the client side. Although this may work just fine, it is more prone to errors since the server still needs to do the cleanup of data for that socket (which do not exist anymore). 
 
 
 ### ClientHelper
