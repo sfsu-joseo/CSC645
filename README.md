@@ -20,7 +20,7 @@ Welcome to Computer Networks!. Please modify this README file with the following
 | EC1                      | not done yet  |
 | EC2                      | not done yet  |
 
-If a lab, project or EC is not set to done at grading time, it won't be graded. The first thing I do when grading is to see the above table. 
+If a lab, project or EC is not set to done at grading time, it won't be graded. The first thing I do when grading assignments is to see the above table. 
 
 ## Please read carefully all the projects, labs, and extracredit assignments guidelines described in this README file. Failure to follow them, may affect negatively your grade. 
 
