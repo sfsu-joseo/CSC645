@@ -127,20 +127,13 @@ A user selecting option 4 will create a new chat room for other users to join. I
 Your option <enter a number>: 4
 
 Enter new room id: 3456
-Chat with room id 3456 succesfully created  
+Your option <enter a number>: 4
+Enter new chat room id: 23456
+
+----------------------- Chat Room 23456 ------------------------ 
+
 Type 'exit' to close the chat room.
-Waiting for other users to join....
-Alice joined.
-John joined.
-Alice> Hello
-John> Hello Alice, who is the moderator of this chat?
-Bob> Hello Alice, and John. I am. How can I help you?
-Alice> See you later. bye
-Alice disconnected from the chat.
-John> It looks like Alice was in a hurry.
-Bob> agree. 
-John> I am leaving too. Take care Bob. Bye.
-John disconnected from the chat.
+Chat room created by: Jose
 Waiting for other users to join....
 ```
 
@@ -156,14 +149,15 @@ Your option <enter a number>: 5
 Enter chat room id to join: 3456
 Joined to chat room 3456  
 Type 'bye' to exit this chat room.
+Alice joined
 John joined.
 Alice> Hello
-John> Hello Alice, who is the moderator of this chat?
+Jose> Hello Alice, who is the moderator of this chat?
 Bob> Hello Alice, and John. I am. How can I help you?
 Alice> See you later. bye
 Alice disconnected from the chat.
 John> It looks like Alice was in a hurry.
-Bob> agree. 
+Jose> agree. 
 John> I am leaving too. Take care Bob. Bye.
 
 ****** TCP Message App ******
