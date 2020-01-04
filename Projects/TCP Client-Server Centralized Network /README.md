@@ -15,7 +15,8 @@ Please use this README file to provide the following documentation for this proj
 
 A pdf file with all the detailed guidelines about this project can be found on iLearn. Here, we describe the most important features of this project.
 
-The project goal is to create a basic server-client architecture network to provide basic functionalites/services to multiple clients. Those services are self explanatory in the following menu.  
+The project goal is to create a basic server-client architecture network to provide basic functionalites/services to multiple clients. Those services ilustrated in the following menu, and explained in detail below.  
+ 
 
 ```
 ****** TCP CHAT ******
@@ -30,7 +31,10 @@ Options Available:
 6. Disconnect from server
 ```
 
-Option 1:
+
+### DDD  
+
+
 
 
 
