@@ -6,6 +6,7 @@ Please use this README file to provide the following documentation for this proj
 * General description of the project (a few sentences)
 * If you used external Python modules/libraries. Provide a requeriments.txt file  
 * Python version and compatibility issues (if any). Your project must be run exactelly as in the running instructions described below in this file
+* Attach screenshots or videos to this file to ilustrate how your program works for all the options in the menu. 
 * A few sentences about all the challenges you found during the implementation of this project and how you overcame them. Please be honest here. 
 
 ## Note that failure to provide the above docs will result in a 30% deduction in your final grade for this project. 
@@ -30,6 +31,10 @@ Options Available:
 ```
 
 The project template provided in this repository is a good starting point, and will save you a lot of time in the implementation of this project. There are some methods that are already implemented by the class instructor in the template. For those methods that are not implemented, they provide starting point instruction about how to implement them. Note: if you decide to use this template, implement code for the parts marked as TODO.
+
+You are not allowed to use any external python module/library other than the ones provided in the template. If I found out that you used additional libraries to complete the project without the instructor approval, you'll get a zero directly in the project.
+
+You can implement this project either in both python 2 or 3 versions. However, you need to specify in the docs of this file which version you implemented. I will use this info to run your project with the appropiate commands.
 
 ## Running the project, 
 
@@ -56,6 +61,29 @@ Open a terminal in machine Y and navigate to the directory where client.py is lo
 python client.py # if python 2 version 
 python3 client.py # if python 3 version 
 ```
+## Project Submission
+
+The due date of this project will be announced on ilearn, in class and by email. Projects are due before class, and it will be considered submitted only and only when students sent an email to the instructor <jortizco@sfsu.edu> with the link to your project in your repository using in the following email format. You can use it as a templete for your email. 
+```
+To: <jortizco@sfsu.edu>
+Subject: CSC645-01 Computer Network: Client-Server Network Project Submission 
+Body message:
+
+Hi Professor Ortiz, 
+
+My Client-Server Network Project has been completed. Here is the link to the project:
+
+link: <your link>
+
+<your name>
+<your student id>
+<your github username>
+
+```
+
+Good luck!!!
+
+
 
 
 
