@@ -10,6 +10,8 @@
 #                   Note: Must run the server before the client.
 ########################################################################
 import pickle
+import menu
+
 class ClientHandler(object):
     """
     The ClientHandler class provides methods to meet the functionality and services provided
