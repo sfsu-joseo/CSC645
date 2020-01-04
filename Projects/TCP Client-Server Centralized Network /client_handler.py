@@ -48,7 +48,7 @@ class ClientHandler(object):
         :return:
         """
         data = self.server.receive(self.clientsocket)
-        if 'option_selected' in data.keys() and 1 <= data['option_selected'] <= 5: # validates a valid option selected
+        if 'option_selected' in data.keys() and 1 <= data['option_selected'] <= 6: # validates a valid option selected
             option = data['option_selected']
             if option == 1:
                 self._send_user_list()
