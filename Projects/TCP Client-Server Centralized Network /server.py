@@ -26,6 +26,8 @@ class Server(object):
         """
         # create an INET, STREAMing socket
         self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        self.messages = {}
+        self.clients = []
         # TODO: bind the socket to a public host, and a well-known port
 
 
@@ -83,7 +85,7 @@ class Server(object):
         clientid = {'clientid': address[1]}
         self._send(clientsocket, clientid)
 
-    def client_handler_thread(self, clientsocket, address ):
+    def client_handler_thread(self, server_instance, clientsocket, address):
         """
         Sends the client id assigned to this clientsocket and
         Creates a new ClientHandler object
