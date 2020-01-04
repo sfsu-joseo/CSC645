@@ -30,11 +30,23 @@ Options Available:
 6. Disconnect from server
 ```
 
+Option 1:
+
+
+
 The project template provided in this repository is a good starting point, and will save you a lot of time in the implementation of this project. There are some methods that are already implemented by the class instructor in the template. For those methods that are not implemented, they provide starting point instruction about how to implement them. Note: if you decide to use this template, implement code for the parts marked as TODO.
 
 You are not allowed to use any external python module/library other than the ones provided in the template. If I found out that you used additional libraries to complete the project without the instructor approval, you'll get a zero directly in the project.
 
 You can implement this project either in both python 2 or 3 versions. However, you need to specify in the docs of this file which version you implemented. I will use this info to run your project with the appropiate commands.
+
+## Project Template. 
+
+This project template consist in five files that are described in detail below: 
+
+* server.py 
+  
+  the server.py file implements the Server class. The server class is in charge of listening for clients requests. 
 
 ## Running the project, 
 
@@ -42,7 +54,7 @@ You must follow exactelly this instructions in order to run and test your projec
 
 This project consist in two main entities, the server and the client. Server and client must be run in different machines located in the same LAN. (Local Area Network). There are other additional classes that must be in the following machines. 
 
-the files client_handler.py, and menu.py must be located in the same directory as the server.py file. The file client_helper.py must be located in the same directory as the client.py file. 
+The files client_handler.py, and menu.py must be located in the same directory as the server.py file. The file client_helper.py must be located in the same directory as the client.py file. 
 
 Additionally, This program must be compatible with the following OS architectures: Linux, Windows and macOS
 
