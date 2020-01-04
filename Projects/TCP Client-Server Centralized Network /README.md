@@ -38,10 +38,7 @@ The following is an example of console output after running the server.
 ```
 // server.py script executed in terminal
 $ python server.py
-Server Info
-IP Address: 127.0.0.1
-port listening: 12000
-Waiting for connections...
+Server listening at 127.0.0.1/12005
 ```
 ### ClientHandler
 
