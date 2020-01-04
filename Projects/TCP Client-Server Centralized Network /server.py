@@ -26,8 +26,7 @@ class Server(object):
         """
         # create an INET, STREAMing socket
         self.serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        self.messages = {}
-        self.clients = []
+        self.clients = [] # list of clients handlers objects handling clients connected to this server. 
         # TODO: bind the socket to a public host, and a well-known port
 
 
@@ -57,20 +56,20 @@ class Server(object):
                 pass
 
 
-    def send(self, client_socket, data):
+    def send(self, clientsocket, data):
         """
         TODO: Serializes the data with pickle, and sends using the accepted client socket.
-        :param client_socket:
+        :param clientsocket:
         :param data:
         :return:
         """
         pass
 
 
-    def receive(self, client_socket, MAX_BUFFER_SIZE=4096):
+    def receive(self, clientsocket, MAX_BUFFER_SIZE=4096):
         """
         TODO: Deserializes the data with pickle
-        :param client_socket:
+        :param clientsocket:
         :param MAX_BUFFER_SIZE:
         :return: the deserialized data
         """
@@ -83,7 +82,7 @@ class Server(object):
         :return:
         """
         clientid = {'clientid': address[1]}
-        self._send(clientsocket, clientid)
+        self.send(clientsocket, clientid)
 
     def client_handler_thread(self, server_instance, clientsocket, address):
         """
