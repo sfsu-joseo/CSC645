@@ -86,17 +86,29 @@ In the above example, the client connects to a server listening at 127.0.0.1/120
 
 # Menu Options With Examples: 
 
-  * Option 1. Get User List 
+* Option 1. Get User List 
    
-  When the user selects this option the client sends a request to the server asking for a list of all the users connected to    it. The server sends that list, and the users are show in console
+When users select this option the client sends a request to the server asking for a list of all the users connected to    it. The server sends that list, and the users are show in console
   
-  ```
-  Your option <enter a number>: 1
-  Users in server: Jose:2345, Nina:8763, Alice:1234, John:4566
-  ```
-  The user format is <username:client_id>
+```
+Your option <enter a number>: 1
+Users in server: Jose:2345, Nina:8763, Alice:1234, John:4566
+```
+The user format is <username:client_id>
   
-  * Option 2. Sent a message
+* Option 2. Sent a message
+
+When this option is selected, the client sends a request containing the option selected and the message entered by the user, and the recipient id. Once the server receives this requests, it iterates over a list containing all the clients handler objects to match the recipent_id of the message. Finally, the server saves the message in the appropiate handler, and acknowledges the client that the message was succesfully saved. 
+
+The following is an example of the output provided by this option on the client side. 
+
+```
+Your option <enter a number>: 2
+Your message: Hello World!
+recipent id: 50922
+Message sent!
+```
+
   
 
 # ClientHelper
