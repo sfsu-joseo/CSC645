@@ -43,11 +43,11 @@ IP Address: 127.0.0.1
 port listening: 12000
 Waiting for connections...
 ```
-# ClientHandler
+### ClientHandler
 
 The client handler class is located in thee machine that is running the server. It is in charge of processing all the requests sent by clients, that needs to be processed by the server. It uses the server methods to send responses.  
 
-# Menu: 
+### Menu: 
 
 The menu class is located in the machine that is running the server, and provides the menu implementation, and all the options including user input implementation. 
 
@@ -84,7 +84,7 @@ Your option <enter a number>:
 
 In the above example, the client connects to a server listening at 127.0.0.1/12000. Once the server accepts this client, the server assign and send a client id to this client. Once the server acknowledges that the client received the client id assigned to it, the handshake process is done. Finally, the client request the menu from the server, the server sends it, and the client shows the menu to the user waiting for the user input. 
 
-# Menu Options With Examples: 
+### Menu Options With Examples: 
 
 * Option 1. Get User List 
    
@@ -104,14 +104,79 @@ The following is an example of the output provided by this option on the client 
 
 ```
 Your option <enter a number>: 2
-Your message: Hello World!
-recipent id: 50922
+Enter your message: Hello World!
+Enter recipent id: 50922
 Message sent!
 ```
+* Optiom 3. Get my messages
 
-  
+```
+Your option <enter a number>: 3
+My messages:
+2019-08-05 17:45: Hello World! (from: Nina)
+2019-08-05 17:50: Are you there Jose? (from: Nina)
+2019-08-05 17:52: This is Bob. What are you doing? (from: Bob)
+```
 
-# ClientHelper
+* Optiom 4. Create a new chat room
+
+```
+Your option <enter a number>: 4
+
+Enter new room id: 3456
+Chat with room id 3456 succesfully created  
+Type 'exit' to close the chat room.
+Waiting for other users to join....
+Alice joined.
+John joined.
+Alice> Hello
+John> Hello Alice, who is the moderator of this chat?
+Bob> Hello Alice, and John. I am. How can I help you?
+Alice> See you later. bye
+Alice disconnected from the chat.
+John> It looks like Alice was in a hurry.
+Bob> agree. 
+John> I am leaving too. Take care Bob. Bye.
+John disconnected from the chat.
+Waiting for other users to join....
+```
+
+* Optiom 5. Join an existing chat room
+
+```
+Your option <enter a number>: 5
+
+Enter chat room id to join: 3456
+Joined to chat room 3456  
+Type 'bye' to exit this chat room.
+John joined.
+Alice> Hello
+John> Hello Alice, who is the moderator of this chat?
+Bob> Hello Alice, and John. I am. How can I help you?
+Alice> See you later. bye
+Alice disconnected from the chat.
+John> It looks like Alice was in a hurry.
+Bob> agree. 
+John> I am leaving too. Take care Bob. Bye.
+
+****** TCP Message App ******
+-----------------------
+Options Available:
+1. Get user list
+2. Sent a message
+3. Get my messages
+4. Create a new chat room
+5. Join an existing chat room
+6. Disconnect from server
+
+Your option <enter a number>:
+
+```
+
+
+
+
+### ClientHelper
 
 The client helper is located in the machine where the client is running, it provides some services to the client to help with user interaction, and handle menu options on the client side. It is executed by the client. 
 
