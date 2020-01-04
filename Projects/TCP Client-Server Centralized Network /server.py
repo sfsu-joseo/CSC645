@@ -57,7 +57,7 @@ class Server(object):
                 pass
 
 
-    def _send(self, client_socket, data):
+    def send(self, client_socket, data):
         """
         TODO: Serializes the data with pickle, and sends using the accepted client socket.
         :param client_socket:
