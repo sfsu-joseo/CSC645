@@ -26,11 +26,11 @@ class Menu(object):
     """
 
     def __init__(self, client):
-       """
-       Class constractor
-       :param client: the client object on client side
-       """
-       self.client = client
+        """
+        Class constractor
+        :param client: the client object on client side
+        """
+        self.client = client
 
     def set_client(self, client):
         self.client = client
