@@ -1,4 +1,6 @@
-# Lab #2: TCP Client Socket  
+# Lab #2: TCP Client Socket 
+
+Please read this README file before class and use this as a reference during the lab session. 
 
 In this lab, students will learn how to create a TCP client socket. Please read the instructions provided in this lab 
 carefully. The file provided in this lab has been partially implemented by your instructor. Your job in this lab is to implement only the parts marked as TODO. 
