@@ -43,7 +43,7 @@ for clients requests to connect. Note that the following code is best suited in 
 # clienthandler is the handler of the client socket in server side. 
 # it will share messages on behalf of the server with the original client socket. 
 # addr contains server ip/port and client id assigned to the client
-clienthandler, addr = serversocket.accept() 
+clienthandler, addr = serversocket.accept() # this is a blocking method. 
 server_ip = addr[0]
 client_id = addr[1] 
 ```
