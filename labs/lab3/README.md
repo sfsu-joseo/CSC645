@@ -21,3 +21,25 @@ import socket
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ```
 
+3. Binding the server. Once the server socket is created, it needs to be bind to a ip address and port in order to 
+start listening for other clients. 
+```python
+host = "127.0.0.1"
+port = 12000
+# will keep only 10 clients waitiing in the server queue. Additional requests when queue is full will be drooped. 
+MAX_NUM_CONN = 10 
+# bind ip address and port
+serversocket.bind((host, port)) # (host, port) are passed as a parameter in a tuple. 
+serversocket.listen(NAX_NUM_CONN) # server starts listening for client connections. 
+```
+
+4. Clients connections. When a client tries to connect to our server, it needs to be accepted first as part of the 
+handshake process betweem them. Since servers are designed to accept multiple clients, they need to keep listening
+for clients requests to connect. 
+
+```python
+client, addr = serversocket.accept() 
+server_ip = addr[0]
+client_id = addr[1] 
+```
+
