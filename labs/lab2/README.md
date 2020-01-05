@@ -65,6 +65,8 @@ Since in this lab you are not implementing the server socket, and do not know an
 can assume that the server received your data when you see proof of it in the projector screen showing the server 
 console log. 
 
+### How to keep the client alive waiting for server responses?
+
 Take into consideration that a client needs to be listening all the time for server responses even if the client did not 
 send a request. Otherwise, the client program would be terminated and therefore its connection to the server would be automatically closed by the client program. How can we implement the client to be in listening mode all the time? Hint: try to put clientsocket.recv() in a forever loop, and only break it when there is no more data comming from the server. 
 
