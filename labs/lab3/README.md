@@ -18,6 +18,8 @@ methods such as bind(), listen(), accept(), send(), recv()...
 ```python
 import socket 
 # creates the server socket 
+# AF_INET refers to the address family ipv4
+# SOCK_STREAM parameter tells the socket to use the TCP protocol (reliable connection oriented.)
 serversocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ```
 
