@@ -7,7 +7,7 @@ to handle them in the server side.
 
 ## Useful hints to follow in this lab 
 
-### How to create a client socket. 
+### How to create a TCP server socket. 
 
 1. In order to create a server socket, first you need to import the socket library builtin in the standad Python libraries.
 The socket library provides all the low level functions needed.
@@ -76,4 +76,17 @@ CSC415 knowledge comes in handy. The clienthandler is a forked process from the 
 Both of them share the same client id which basically is the pid of the process. Therfore, the clienthandler
 related to a client process knows exactely where to send the message based on the pid. This is already 
 implemented by the sockets library. So, you don't need to worry about this. 
+
+## Testing your program 
+
+Since you already have a client program from lab #2, try to run your server program first in a terminal 
+windows using your localhost as the IP address for your server and bind a random port to it (i.e 12000). 
+Next, try to create a connection between your client and server. Also, try to share some data between them. 
+
+For this lab is ok if your server does not support multiple connections at the same time. In order to 
+accomplish that, you'll need to thread your clients in the server. More about this in lab #4. 
+
+Now that you completed this lab and have a basic understanding about how TCP clients and server work, 
+you can get started with the TCP Centralized Client-Server project 
+
 
