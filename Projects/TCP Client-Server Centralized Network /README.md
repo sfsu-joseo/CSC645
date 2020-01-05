@@ -44,11 +44,6 @@ Server listening at 127.0.0.1/12005
 
 The client handler class is located in thee machine that is running the server. It is in charge of processing all the requests sent by clients, that needs to be processed by the server. It uses the server methods to send responses.  
 
-### Menu: 
-
-The menu class is located in the machine that is running the server, and provides the menu implementation, and all the options including user input implementation. 
-
-
 ### Client
 
 The client class implements a TCP client socket that connects to a server socket running in a well know ip adress and port. The client class is in charge of interacting with the user, recopilate the user data, and send it to the server in a request to be processed. 
@@ -80,6 +75,14 @@ Your option <enter a number>:
 ```
 
 In the above example, the client connects to a server listening at 127.0.0.1/12000. Once the server accepts this client, the server assign and send a client id to this client. Once the server acknowledges that the client received the client id assigned to it, the handshake process is done. Finally, the client request the menu from the server, the server sends it, and the client shows the menu to the user waiting for the user input. 
+
+### Menu: 
+
+The menu class needs to be located on server side. The logic behind this is that a client does not know the services provided by the server until the client connects to the server. A real example of this is when a user requests a web page. The user, in this case, does not know anything about how this web site will look like until it inspects the response. In the same way, our client does not know anything about the menu until the server sends it in the response after the handshake. 
+
+Once a client connects to the server, and the server sends the menu object with all their functionalities to the client, the client can use the menu to interact with the users. Note that only client and users can interact via the user menu. Server and client handler are only in charge of inspecting and processing requests from clients, and send their responses back to to the client.
+
+The following is a detailed description of all the services/options that user menu must provide in this project. 
 
 ### Menu Options With Examples: 
 
@@ -179,15 +182,6 @@ Your option <enter a number>:
 * Option 6. Disconnect from server
 
 A user selecting this option will requests to be disconnected from the server. The client sends the request to the server, then the server performs a cleanup of all the data related to that client in the server, and finally close the connection with that client socket. In addition, you also have the option to disconnect the client on the client side. Although this may work just fine, it is more prone to errors since the server still needs to do the cleanup of data for that socket (which do not exist anymore). 
-
-
-### ClientHelper
-
-The client helper is located in the machine where the client is running, it provides some services to the client to help with user interaction, and handle menu options on the client side. It is executed by the client. 
-
-
-
-
 
 ## Running the project, 
 
