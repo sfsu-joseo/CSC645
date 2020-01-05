@@ -35,7 +35,7 @@ pickle library which make our job a lot easier.
 ```python
 import pickle 
 MAX_MEM_ALLOC = 4096
-# stream of bytes from server
+# stream of bytes from server. Note that recv(..) method is a blocking method. 
 serialized_data = clientsocket.recv(MAX_MEM_ALLOC) 
 # deserialized the data. Now is a python dictionary again {'cliientid:<assigned id>}
 deserialized_data = pickle.loads(serialized_data)  
