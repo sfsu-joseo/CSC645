@@ -1,10 +1,7 @@
 # Lab #2: TCP Client Socket  
 
-In this lab, students will learn how to create a TCP client socket. Please follow the instructions provided in this lab 
-carefully. 
-
-The file provide in this lab has been partially implemented by your instructor. Your job in this lab is to implement only 
-the parts marked as TODO. 
+In this lab, students will learn how to create a TCP client socket. Please read the instructions provided in this lab 
+carefully. The file provided in this lab has been partially implemented by your instructor. Your job in this lab is to implement only the parts marked as TODO. 
 
 ## Useful hints to follow in this lab 
 
@@ -67,6 +64,9 @@ a way to acknowledge to the client that the data was successfully received.
 Since in this lab you are not implementing the server socket, and do not know anything about the server acknowledges, you
 can assume that the server received your data when you see proof of it in the projector screen showing the server 
 console log. 
+
+Take into consideration that a client needs to be listening all the time for server responses even if the client did not 
+send a request. Otherwise, the client program would be terminated and therefore its connection to the server would be automatically closed by the client program. How can we implement the client to be in listening mode all the time? Hint: try to put clientsocket.recv() in a forever loop, and only break it when there is no more data comming from the server. 
 
 
 ## Testing you client socket
