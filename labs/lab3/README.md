@@ -26,7 +26,8 @@ start listening for other clients.
 ```python
 host = "127.0.0.1"
 port = 12000
-# will keep only 10 clients waitiing in the server queue. Additional requests when queue is full will be drooped. 
+# will keep only 10 clients waitiing in the server queue. 
+# Additional requests when queue is full will be drooped. 
 MAX_NUM_CONN = 10 
 # bind ip address and port
 serversocket.bind((host, port)) # (host, port) are passed as a parameter in a tuple. 
@@ -34,12 +35,45 @@ serversocket.listen(NAX_NUM_CONN) # server starts listening for client connectio
 ```
 
 4. Clients connections. When a client tries to connect to our server, it needs to be accepted first as part of the 
-handshake process betweem them. Since servers are designed to accept multiple clients, they need to keep listening
-for clients requests to connect. 
+handshake process between them. Since servers are designed to accept multiple clients, they need to keep listening
+for clients requests to connect. Note that the following code is best suited in a loop to keep accepting clients.
 
 ```python
-client, addr = serversocket.accept() 
+# server accepts a client trying to connect
+# clienthandler is the handler of the client socket in server side. 
+# it will share messages on behalf of the server with the original client socket. 
+# addr contains server ip/port and client id assigned to the client
+clienthandler, addr = serversocket.accept() 
 server_ip = addr[0]
 client_id = addr[1] 
 ```
+
+5. Once the client is accepted, the server needs to acknowledge the connection to the client as a part of the 
+handshake process. One way to accomplish this is by sending the assigned client id to the client. That way, the 
+client assumes that since a valid client id has been assigned to it by the server, the connection was succesful
+
+```python
+import pickle 
+data = {'clientid': client_id} 
+serialezed_data = pickle.dumps(data) 
+clienthandler.send(serialezed_data) # data sent to the client. 
+```
+
+6. Receiving data. The way the server receives data is similar to the client. However, in this case, 
+the one receiving the data is the clienthandler. 
+```python
+MAX_ALLOC_MEM = 4096
+# server receives data
+data_from_client = clienthandler.recv(MAX_ALLOC_MEM) 
+# deserializes the data received
+serialized_data = pickle.loads(data_from_client) 
+# do something with the data. 
+```
+
+7. When multiple clients are connected. How a clienthandler knows to which client send the data if the 
+low level send() method does not provide a option to define the client recipient? Here is where your
+CSC415 knowledge comes in handy. The clienthandler is a forked process from the client when it connects. 
+Both of them share the same client id which basically is the pid of the process. Therfore, the clienthandler
+related to a client process knows exactely where to send the message based on the pid. This is already 
+implemented by the sockets library. So, you don't need to worry about this. 
 
