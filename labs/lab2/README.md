@@ -27,7 +27,7 @@ address and port of the server will be provided by the instructor.
 # to handle connection errors (i.e server is not running)
 server_ip_address = "127.0.0.1"
 server_port = 12000
-clientSocket.connect((server_ip_address, server_port))
+clientsocket.connect((server_ip_address, server_port))
 ```
 4. After the server accepts the connection, it will assign and send a unique client id to the client. This client id will
 define the client in the network. (more about this in server side in next lab). The data (client id or any other data) 

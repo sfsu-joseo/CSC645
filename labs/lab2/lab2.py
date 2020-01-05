@@ -13,7 +13,6 @@
 ########################################################################################################################
 
 # don't modify this imports.
-import unittest
 import socket
 import pickle
 
@@ -26,6 +25,9 @@ Client class that provides functionality to create a client socket is provided. 
 class Client(object):
 
     def __init__(self):
+        """
+        Class constructor
+        """
         self.client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         self.client_id = None
         self.student_name = None # TODO: your name
