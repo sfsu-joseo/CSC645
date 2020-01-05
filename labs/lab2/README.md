@@ -71,7 +71,7 @@ console log.
 
 Take into consideration that a client needs to be listening all the time for server responses even if the client did not 
 send a request. Otherwise, the client program would be terminated and therefore its connection to the server would be automatically closed by the client program. How can we implement the client to be in listening mode all the time? Hint: try to put clientsocket.recv() in a forever loop, and only break it when there is no more data comming from the server. 
-```
+```python
 # client keeps listening for more data
 while True: 
    data = clientsocket.recv(MAX_MEM_ALLOC) # blocking method. 
