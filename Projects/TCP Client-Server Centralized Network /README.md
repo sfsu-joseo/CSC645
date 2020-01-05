@@ -147,6 +147,8 @@ Below is an example of the joining process.
 Your option <enter a number>: 5
 
 Enter chat room id to join: 3456
+
+----------------------- Chat Room 23456 ------------------------
 Joined to chat room 3456  
 Type 'bye' to exit this chat room.
 Alice joined
