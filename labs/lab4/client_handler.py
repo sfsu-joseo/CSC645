@@ -32,7 +32,7 @@ class ClientHandler(object):
 
     def print_lock(self):
         """
-        TODO: create a new print lock 
+        TODO: create a new print lock
         :return: the lock created
         """
         # your code here.

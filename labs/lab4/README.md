@@ -153,7 +153,7 @@ above server
 
 For each client that connects to your server, the server should output in console the name, student id, and 
 github username from the user connecting to the server. You are free to hardcode this data in your
-ClientHandler before running the each client, or you can ask this info by user input in the client side. 
+ClientHandler before running each client, or you can ask this info by user input in the client side. 
 
 
 
