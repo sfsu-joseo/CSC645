@@ -26,8 +26,7 @@ class Server(object):
     server must not be stopped when a exception occurs. A proper message needs to be show in the
     server console.
     """
-    # keeps 10 clients in queue 
-    MAX_NUM_CONN = 10
+    MAX_NUM_CONN = 10 # keeps 10 clients in queue
 
     def __init__(self, host="127.0.0.1", port = 12000):
         """
