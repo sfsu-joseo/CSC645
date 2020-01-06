@@ -30,9 +30,9 @@ class Server(object):
 
     def __init__(self, host="127.0.0.1", port = 12000):
         """
-
-        :param host:
-        :param port:
+        Class constructor
+        :param host: by default localhost. Note that '0.0.0.0' takes LAN ip address. 
+        :param port: by default 12000
         """
         self.host = host
         self.port = port
