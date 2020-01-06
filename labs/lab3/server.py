@@ -17,6 +17,7 @@
 # don't modify this imports.
 import socket
 import pickle
+from threading import Thread
 
 class Server(object):
     """
@@ -31,7 +32,7 @@ class Server(object):
     def __init__(self, host="127.0.0.1", port = 12000):
         """
         Class constructor
-        :param host: by default localhost. Note that '0.0.0.0' takes LAN ip address. 
+        :param host: by default localhost. Note that '0.0.0.0' takes LAN ip address.
         :param port: by default 12000
         """
         self.host = host
@@ -79,7 +80,7 @@ class Server(object):
                clienthandler, addr = self.serversocket.accept()
                # TODO: from the addr variable, extract the client id assigned to the client
                # TODO: send assigned id to the new client. hint: call the send_clientid(..) method
-               self.handler(clienthandler) # receive, process, send response to client.
+               self._handler(clienthandler) # receive, process, send response to client.
             except:
                # handle exceptions here
                pass #remove this line after implemented.
