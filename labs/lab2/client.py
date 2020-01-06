@@ -34,7 +34,7 @@ class Client(object):
         self.github_username = None # TODO: your username
         self.sid = 0 # TODO: your student id
 
-    def connect_to_server(self, server_ip_address, server_port):
+    def connect(self, server_ip_address, server_port):
         """
         TODO: Create a connection from client to server
         :param server_ip_address:
@@ -91,12 +91,12 @@ class Client(object):
         TODO: close this client
         :return: VOID
         """
-
-# Running the client.
-server_ip_address = "127.0.0.1" # TODO: change this to the server ip address provided by instructor in class
-server_port = 12000
-client = Client()
-client.connect_to_server(server_ip_address,server_port)
+# main execution
+if __name__ == '__main__':
+    server_ip_address = "127.0.0.1"  # TODO: change this to the server ip address provided by instructor in class
+    server_port = 12000
+    client = Client()
+    client.connect(server_ip_address, server_port)
 
 # If your data was successfully sent to the server run by the instructor in class, you'll get full credit for this lab.
 
