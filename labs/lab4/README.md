@@ -138,7 +138,8 @@ your name, student id, and github username.
 2. Create a print_lock so only one clienthandler can log the data on the server console at a time
 
 ### Server class: 
-1. Modify this class so it can thread clients to support multiple client connections. follow examples given 
+1. Add a copy of your server class from lab #3 to this lab folder.
+2. Modify new server class, so it can thread clients to support multiple client connections. follow examples given 
 in this README file
 2. The server should show the same output as the instructor's server when testing your client in lab #2. 
 It should show in your server windows your name, student id and github username, 
