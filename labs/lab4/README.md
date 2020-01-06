@@ -156,6 +156,8 @@ For each client that connects to your server, the server should output in consol
 github username from the user connecting to the server. You are free to hardcode this data in your
 ClientHandler before running each client, or you can ask this info by user input in the client side. 
 
+### Now that you have completed labs 0 to 4, you have the proper networking knowledge to complete the TCP Centralized Client-Server Network Project
+
 
 
 
