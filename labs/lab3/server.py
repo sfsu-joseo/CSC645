@@ -122,7 +122,6 @@ class Server(object):
         self._listen()
         self._accept_clients()
 
-
 # main execution
 if __name__ == '__main__':
     server = Server()
