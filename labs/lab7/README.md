@@ -87,5 +87,19 @@ A bitfield of the wrong length is considered an error. Clients should drop the c
 The request message is fixed length, and is used to request a block. The payload contains the following information:
 
 index: integer specifying the zero-based piece index
+
 begin: integer specifying the zero-based byte offset within the piece
+
 length: integer specifying the requested length
+
+### piece: <len=0009+X><id=7><index><begin><block>
+The piece message is variable length, where X is the length of the block. The payload contains the following information:
+
+index: integer specifying the zero-based piece index
+
+begin: integer specifying the zero-based byte offset within the piece
+
+block: block of data, which is a subset of the piece specified by index.
+
+### cancel: <len=0013><id=8><index><begin><length>
+The cancel message is fixed length, and is used to cancel block requests. The payload is identical to that of the "request" message
