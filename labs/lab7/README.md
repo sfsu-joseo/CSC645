@@ -1,6 +1,6 @@
 # Lab 7, P2P: The BitTorrent Peer Wire Protocol 
 
-In this lab, you´ll learn to create a Python class that implements the services provided by the Peer Wire Protocol. 
+In this lab, you´ll create a Python class that implements the services provided by the Peer Wire Protocol. 
 
 ## How Does it work?
 
