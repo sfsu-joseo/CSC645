@@ -18,6 +18,10 @@ So, based on the above network architecture, P2 and P3 separatelly, will run 2 c
 
 It is important to point out that a seeder can be seeder in a specific swarm, but at the same time, it may be a peer in a different swarm since a swarm is sharing pnly a specific file betwwen the peers connected to it. 
 
+## Your work in this lab 
+
+In this lab, you will implement the method connect(peers) in the Peer class template provided. This method takes as parameter a list containg all the ip addresses of the server sockets running by others peers in the swarm. Your job is to create different client sockets objects that connect to those peers. Note that in this lab, you can assume that you already have a client and server classes in the same directory as the Peer class. I am only interested here in the logic you use to implement the connect(peers) method 
+
 
 
 
