@@ -1,1 +1,24 @@
+# Lab 8: P2P Uploading and Downloading Data 
+
+Before moving to the uploading and downloading concepts in this lab, it is important to understand that in a P2P network peers are client and servers at the same time. Once this concept is clear, we can explain how uploading and downloading works. 
+
+## How do uploading and downloading data Work in P2P Networks? 
+
+Uploading data to be downloaded by other peers in the network is an easy task if you understand the communication mechanisms applied to client-server sockets. However, the process of downloading data from other peers in the network is more complicated. Let´s go over both of them in detail.
+
+### Uploading Data
+
+In a P2P BitTorrent network, the process of a peer uploading data to other peers is similar to the client-server process where multiple clients connect to the the same server. For example, in a P2P network where peers (P1, P2 and P3) are sharing data between them and P1 is a seeder, P2 and P3 will run different clients sockets that connect to the server running in P1. As you can see, uploading data to the network is just running a server 
+
+### Downloading Data
+
+Downloading data from the P2P network is a complicated process that needs a good understanding of how sockets work. Let´s explain this concept using the same network example we used in the above section. Assume like in the above section, that P1 is the seeder. Also assume that P2 downloaded some pieces of the file that P1 is sharing, and P3 wants to download those pieces from from both P1 and P2. So, P3 needs a client that must connect to the server run by P1. No problem with this configuration. However, the client from P3 also needs to connect to the server run by P2. This new configuration is not possible because the client socket that is running in P3 can only connect to one server at a time. Thus, in order to make this work, P3 needs to run two different client sockets, the first one will connect to P1´s server, and the second one will connect to P2´s server. 
+
+So, based on the above network architecture, P2 and P3 separatelly, will run 2 client sockets and one server socket. On the other hand, P1 (the seeder) will run only one server socket and no client because the seeder does not need to download data in that specific swarm. 
+
+It is important to point out that a seeder can be seeder in a specific swarm, but at the same time, it may be a peer in a different swarm since a swarm is sharing pnly a specific file betwwen the peers connected to it. 
+
+
+
+
 
