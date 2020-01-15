@@ -1,8 +1,11 @@
 """
-Lab 7: Peer Wire Protocol (PWP)
-Create a class with the basic implementation for the bitTorrent peer wire protocol
-A basic template structure is provided, but you may need to implement more methods
-For example, the payload method depending of the option selected
+Lab 8: peer.py
+This file contains a basic template of the Peer class. In this lab, your job 
+is to implement all the parts marked as TODO. Note that you don´t need to run
+the code of this lab. The goal of this lab is to see how your logic works, and
+therefore, to make sure that you understood how peers perform the downloading 
+and uploading process in the network, and also which challenges you may encounter
+when implementing those functionalities. 
 """
 
 class Peer (Server):
