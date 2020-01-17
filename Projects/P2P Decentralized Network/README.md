@@ -29,12 +29,11 @@ In this project, and using the knowledge gathered in the labs, you will build a 
   
   * info: this maps to a dictionary whose keys are dependent on whether one or more files are being shared:
       
-    · files—a list of dictionaries each corresponding to a file (only when multiple files are being shared). Each dictionary has the    
-      following keys:
+   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; · files: a list of dictionaries each corresponding to a file (only when multiple files are being shared). Each dictionary has the following keys:
 
-       · length: size of the file in bytes.
+             · length: size of the file in bytes.
        
-       · path: a list of strings corresponding to subdirectory names, the last of which is the actual file name
+             · path: a list of strings corresponding to subdirectory names, the last of which is the actual file name
        
     · length: size of the file in bytes (only when one file is being shared)
 
