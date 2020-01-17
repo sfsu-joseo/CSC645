@@ -31,7 +31,6 @@ such as the BitTorrent Message Protocol (more about this in lab #7)
 
 
 ## P2P Entities Definitions BitTorrent Protocol Based
-
 In a P2P network there are many protocols used to provide services. One of the most used is tha BitTorrent 
 protocol. All the entities in a P2P network are well defined and have a specific job to do in the network. The following 
 is a list of those entities and their definitions. 
