@@ -11,4 +11,21 @@ Please use this README file to provide the following documentation for this proj
 
 ## Note that failure to provide the above docs will result in a 30% deduction in your final grade for this project. 
 
+# Project Guidelines 
+
+In this project, and using the knowledge gathered in the labs, you will build a decentralized P2P network using the BitTorrent Protocol. Recall that in a decentralized P2P network the peer is the client, server and tracker at the same time.
+
+### Metainfo 
+
+Create a .torrent file containing all the metainfo related to the file you are willing to share in the network. 
+
+### Peer 
+
+The peer class is the main class of this network. It needs to have the following functionalities:
+
+    * 
+
+
+    
+
 
