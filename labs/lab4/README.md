@@ -1,5 +1,4 @@
 # Lab #4: Threading clients in server side 
-
 Please read this README file before class and use this as a reference during the lab session. 
 
 In lab #3, hopefully you created a server program that handle client connections, process requests, and 
