@@ -28,4 +28,33 @@ The user should enter the following data when the program starts:
 
 * The MTU supported by each bus line in the router fabric 
 
+* The number of datagrams in the network
+
+## Program Output 
+
+The program must output in console the following data: 
+
+* All the datagrams forwaded from input buffer to router fabric 
+
+* The process of fragmentation inside the router fabric 
+
+* The interface outoput selected by the program to forward the datagram from the router fabric to the output queue of that interface. 
+
+* All the datagrams forwarded from the output buffer to the link 
+
+## Submission Guidelines
+
+By the due date of this project students must send an email to jortizco@sfsu.edu with the link to this project in your class repository, The email subject must be: CSC645-01 Computer Networks: EC Forwarding  
+
+## Grading Guidelines 
+
+Extracredit projects are all or nothing. No partial credit will be given. So, make sure that you understand the concepts presented in 
+this project before doing any work. The following are the grading guidelines: 
+
+* Provide complete documentation about the project 
+
+* This project will be graded based on completness and correctness. 
+
+* If I cannot run your program, I cannot grade it, and therefore, you´ll get a zero in this project. 
+
 
