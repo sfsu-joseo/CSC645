@@ -29,7 +29,7 @@ In this project, and using the knowledge gathered in the labs, you will build a 
   
   * info: this maps to a dictionary whose keys are dependent on whether one or more files are being shared:
       
-   * files: a list of dictionaries each corresponding to a file (only when multiple files are being shared). Each dictionary has the following keys:
+    * files: a list of dictionaries each corresponding to a file (only when multiple files are being shared). Each dictionary has the following keys:
 
              · length: size of the file in bytes.
        
