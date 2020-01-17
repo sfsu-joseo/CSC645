@@ -1,5 +1,4 @@
 # Lab #5: Getting Started with peer-to-peer Networks (P2P)
-
 In this lab, you'll learn the basics of peer-to-peer (P2P) networks. This is a starting point in order to understand the
 requeriments for your next project in this class; a P2P decentralized network
 
