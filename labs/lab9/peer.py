@@ -1,5 +1,5 @@
 """
-Lab 8: Routing and Handing
+Lab 9: Routing and Handing
 Implement the routing and handling functions
 """
 class Peer (Server):
