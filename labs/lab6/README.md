@@ -1,5 +1,4 @@
 # LAB 6: P2P BitTorrent Protocol
-
 In last lab, students learned in detail about P2P networks and how they work. However, in order to work properly, P2P networks need to be handled by communication protocols that define what and how data is shared in the network. The BitTorrent protocol is commonly used among P2P networks because it provides good general performance. 
 
 ## How Does BitTorrent Work?
