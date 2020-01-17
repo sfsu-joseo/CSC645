@@ -18,7 +18,7 @@ In this project students will implement the forwarding protocol. The following a
 
 The user should enter the following data when the program starts:
 
-* The source and destination ip address 
+* The source and destination ip addresses 
 
 * The number of interfaces in the router 
 
