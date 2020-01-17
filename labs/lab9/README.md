@@ -1,5 +1,4 @@
 # LAB 9: P2P Handling and Routing 
-
 In this lab, students will learn about the handling and routing concepts in a P2P network and why they are so important. In lab 8, students learned about the challenges found while implementing downloading mechanismes to download data from other peers. Two of the main challenges found when downloading data from other peers are the handleing and routing processes of that data 
 
 ## Handling Clients in Peer Side
