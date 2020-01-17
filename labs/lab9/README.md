@@ -12,7 +12,7 @@ Handling clients in the peer side (downloading) is a bit more complicated. Imagi
 
 Routing data is the process of routing pieces of data comming from different peers to the file they belong. This is a difficult process because those pieces of data may be being shared in different swarms. For example, P1, P2 and P3 are connected and sharing data in different swarms. When P1 receives data from P2, it needs a way of knowing to which file that piece of data belongs. The routing function is the one that perform this task. 
 
-One way of implementing routing is to keep track of all the pieces that are being uploaded and downloaded (including the ones that are stil missing) by assigning two ID values to each message identifying the swarm and file those pieces belong to. That way those pieces can be routed to ther correspondent files once they are recieved by that peer 
+One way of implementing routing is to keep track of all the pieces that are being uploaded and downloaded (including the ones that are stil missing) by assigning two ID values to each message identifying the swarm and file those pieces belong to. That way those pieces can be routed to ther correspondent files once they are recieved by that peer Take into consideration that when a peer connects to a P2P network for the first time, one of the peers broadcasts to the other peers the swarnm and file IDs, so the new peers can make their own routing tables.  
 
 ## Your job in this lab 
 
