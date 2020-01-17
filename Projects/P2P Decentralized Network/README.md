@@ -17,10 +17,8 @@ In this project, and using the knowledge gathered in the labs, you will build a 
 
 ### Metainfo 
 
-1. Create a .torrent file containing all the metainfo related to the file you are willing to share in the network. 
-
-2. The file should contain the following information encripted in bencode. 
-
+Create a .torrent file containing all the metainfo related to the file you are willing to share in the network. 
+ 
 * A torrent file contains a list of files and integrity metadata about all the pieces, and optionally contains a list of trackers.
 
 * A torrent file is a bencoded dictionary with the following keys (the keys in any bencoded dictionary are lexicographically ordered):
@@ -31,9 +29,9 @@ In this project, and using the knowledge gathered in the labs, you will build a 
       
     * files: a list of dictionaries each corresponding to a file (only when multiple files are being shared). Each dictionary has the following keys:
 
-             * length: size of the file in bytes.
+        * length: size of the file in bytes.
        
-             * path: a list of strings corresponding to subdirectory names, the last of which is the actual file name
+        * path: a list of strings corresponding to subdirectory names, the last of which is the actual file name
        
     * length: size of the file in bytes (only when one file is being shared)
 
