@@ -10,7 +10,17 @@ Handling clients in the peer side (downloading) is a bit more complicated. Imagi
 
 ## Routing Data 
 
-Routing data is the process of putting pieces of data that were downloaded from other peer into their correspondent files. This is a difficult process since data may be comming from different swarms. A basic implementation of the routing process is to create a 
+Routing data is the process of routing pieces of data comming from different peers to the file they belong. This is a difficult process because those pieces of data may be being shared in different swarms. For example, P1, P2 and P3 are connected and sharing data in different swarms. When P1 receives data from P2, it needs a way of knowing to which file that piece of data belongs. The routing function is the one that perform this task. 
+
+One way of implementing routing is to keep track of all the pieces that are being uploaded and downloaded (including the ones that are stil missing) by assigning two ID values to each message identifying the swarm and file those pieces belong to. That way those pieces can be routed to ther correspondent files once they are recieved by that peer 
+
+## Your job in this lab 
+
+In this lab, students will implement the basic functionality of the handling and routing functions in the Peer class. A template of the Peer class is provided in this lab, but you are free to replace it with your own Peer class from lab 8. 
+
+
+
+
 
 
 
