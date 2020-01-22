@@ -6,7 +6,8 @@
 # Student Name:
 # Student ID:
 # Student Github Username:
-# Instructions: Read each problem carefully, and implement them correctly. Grade is based on lab correctness/completeness
+# Instructions: Complete the TODO sections for each problem
+# Guidelines: Read each problem carefully, and implement them correctly. Grade is based on lab correctness/completeness
 #               No partial credit will be given. Labs #0 and #1 must be submitted by Monday Feb 3rd at 7:00 pm
 #               No unit test are provided for lab #0
 ########################################################################################################################
