@@ -39,9 +39,7 @@ Create a .torrent file containing all the metainfo related to the file you are w
     
     * piece length: number of bytes per piece. This is commonly 28 KiB = 256 KiB = 262,144 B.
     
-    * pieces: a hash list, i.e., a concatenation of each piece's SHA-1 hash. As SHA-1 returns a 160-bit hash, pieces will be a string  
-              whose length is a multiple of 20 bytes. If the torrent contains multiple files, the pieces are formed by concatenating the               files in the order they appear in the files dictionary (i.e. all pieces in the torrent are the full piece length except 
-              for the last piece, which may be shorter).
+    * pieces: a hash list, i.e., a concatenation of each piece's SHA-1 hash. As SHA-1 returns a 160-bit hash, pieces will be a string whose length is a multiple of 20 bytes. If the torrent contains multiple files, the pieces are formed by concatenating the               files in the order they appear in the files dictionary (i.e. all pieces in the torrent are the full piece length except for the last piece, which may be shorter).
 
 All strings must be UTF-8 encoded, except for pieces, which contains binary data
 
