@@ -15,6 +15,8 @@ methods such as connect(), send(), recv()...
 ```python
 # TCP client socket
 import socket
+# AF_INET is the connection domain. In this case, IPv4
+# SOCK_STREAM is the type of connection. STREAM means that that socket will use a TCP based connection
 clientsocket = socket.socket(socket.AF_INET, socket.SOCK_STREAM) 
 ```  
 3. Connect to a well know server. A well know server is a server which IP address, port or hostname is well know by the 
