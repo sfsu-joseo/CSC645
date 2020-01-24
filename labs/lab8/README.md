@@ -2,7 +2,6 @@
 Before moving to the uploading and downloading concepts in this lab, it is important to understand that in a P2P network peers are client and servers at the same time. Once this concept is clear, we can explain how uploading and downloading works. 
 
 ## How do uploading and downloading data Work in P2P Networks? 
-
 Uploading data to be downloaded by other peers in the network is an easy task if you understand the communication mechanisms applied to client-server sockets. However, the process of downloading data from other peers in the network is more complicated. Let´s go over both of them in detail.
 
 ### Uploading Data
