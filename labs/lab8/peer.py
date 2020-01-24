@@ -7,7 +7,7 @@ therefore, to make sure that you understood how peers perform the downloading
 and uploading process in the network, and also which challenges you may encounter
 when implementing those functionalities. 
 """
-
+from server import Server
 class Peer (Server):
 
     SERVER_PORT = 5000
