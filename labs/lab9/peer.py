@@ -2,6 +2,8 @@
 Lab 9: Routing and Handing
 Implement the routing and handling functions
 """
+from server import Server # assumes server.py is in the root directory.
+
 class Peer (Server):
 
     SERVER_PORT = 5000
