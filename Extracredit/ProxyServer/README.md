@@ -45,8 +45,12 @@ Web caching is on
 4. Send a request (GET, HEAD OR POST): 
 5. Turn web proxy server off
 ```
-Once web caching is active in the proxy server, all the GET requests done in option 4, need to be cached. Thus, students
-students need to implemente a mechanishm to save all the responses from the server if this is the first request done to 
-that server. Otherwise, if the response is already cached, the system will only show the response cached. (more about this
-in option 4) 
+Once the web caching system is active in the proxy server, all the GET requests done in option 4, need to be cached. Every time we send a request to a server for the first time, the server should save the response in the cache folder. The name of the file should be a hashed identifier, and the extension of the file should be .pickle 
+
+The following are examples of the names and extension of cached server responses. 
+
+```
+53d9b3a0-4c87-11ea-9d7f-784f4387efce.pickle
+d54442c6-4c86-11ea-9d7f-784f4387efce.pickle
+```
   
