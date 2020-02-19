@@ -297,6 +297,40 @@ function _F_installCss(c){}
 
 ```
 
+### Option 5: Turn web proxy server off
+
+When this option is selected the proxy server is turned off, the proxy server should confirm if the user wants to show the main manu (the one from client-server network app). Otherwise, the proxy server will close the connection with the client. 
+
+```
+*** Proxy Server Settings *** 
+1. Turn web caching On
+2. Turn authentication On
+3. Turn private browsing On
+4. Send a request (GET, HEAD OR POST): 
+5. Turn web proxy server off
+
+
+Your option <enter a number>: 5
+Web server is now off
+
+Do you want to continue with the main menu (y/n)?: y
+
+****** TCP Client-Server Network ******
+-----------------------
+Options Available:
+1. Get user list
+2. Sent a message
+3. Get my messages
+4. Create a new chat room
+5. Join an existing chat room
+6. Turn web proxy server on
+7. Disconnect from server
+
+
+Your option <enter a number>: 
+
+```
+
 
 
 
