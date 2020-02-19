@@ -194,6 +194,8 @@ When users select this option, the server will turn on the web server proxy serv
 
 ```
 
+     * jjsjjsjsjsjssj
+
 * Option 7. Disconnect from server
 
 A user selecting this option will requests to be disconnected from the server. The client sends the request to the server, then the server performs a cleanup of all the data related to that client in the server, and finally close the connection with that client socket. In addition, you also have the option to disconnect the client on the client side. Although this may work just fine, it is more prone to errors since the server still needs to do the cleanup of data for that socket (which do not exist anymore). 
