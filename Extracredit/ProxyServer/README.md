@@ -93,9 +93,9 @@ HEAD requests are different from GET requests. When a HEAD request is performed,
 
 POST requests are done to add some sense of security to the data sent in the request. Normally, POST requests are done when you need to submit forms or any other resource that needs to be transmitted to the server in the body of the requests. 
 
-Examples for option 4 
+### Examples for option 4. Note that in all the following examples, private web browsing was turned on automatically, so the source IP you see is not the client IP address (127.0.0.1), it is the proxy IP address running in a different machine. 
 
-GET request with authentification off, trying to create a request from a resource that needs authorization.
+GET request with authentification off trying to create a request to a resource that needs authorization.
 
 ```
 *** Proxy Server Settings *** 
@@ -108,7 +108,7 @@ GET request with authentification off, trying to create a request from a resourc
 
 Your option <enter a number>: 4
 request> GET https://api.github.com/user
-Source IP address: 127.0.0.1
+Source IP address: 180.8.8.21
 401 Unauthorized. Activate authentication in your proxy server and try again.
 ```
 
@@ -128,7 +128,7 @@ Web authentication is on
 
 Your option <enter a number>: 4
 request> GET https://api.github.com/user
-Source IP address: 127.0.0.1
+Source IP address: 180.8.8.21
 Username: joseortizcostadev@gmail.com
 Password: 
 Success 200 OK
@@ -151,7 +151,7 @@ Web authentication is off
 
 Your option <enter a number>: 4
 request> GET https://example.com
-Source IP address: 127.0.0.1
+Source IP address: 180.8.8.21
 Success 200 OK
 <!doctype html>
 <html>
