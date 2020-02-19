@@ -69,7 +69,8 @@ Options Available:
 3. Get my messages
 4. Create a new chat room
 5. Join an existing chat room
-6. Disconnect from server
+6. Turn web proxy server on
+7. Disconnect from server
 
 Your option <enter a number>:
 ```
@@ -179,7 +180,21 @@ Your option <enter a number>:
 
 ```
 
-* Option 6. Disconnect from server
+* Option 6. Turn web proxy server on (Note that this option is extra-credit and optional)
+
+When users select this option, the server will turn on the web server proxy services and will show the following additional menu to the user. 
+
+```
+*** Proxy Server Settings *** 
+1. Turn web caching On
+2. Turn authentication On
+3. Turn private browsing Off
+4. Send a request (GET, HEAD OR POST): 
+5. Turn web proxy server off
+
+```
+
+* Option 7. Disconnect from server
 
 A user selecting this option will requests to be disconnected from the server. The client sends the request to the server, then the server performs a cleanup of all the data related to that client in the server, and finally close the connection with that client socket. In addition, you also have the option to disconnect the client on the client side. Although this may work just fine, it is more prone to errors since the server still needs to do the cleanup of data for that socket (which do not exist anymore). 
 
