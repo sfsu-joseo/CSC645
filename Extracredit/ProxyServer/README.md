@@ -95,7 +95,7 @@ POST requests are done to add some sense of security to the data sent in the req
 
 Examples for option 4 
 
-GET request with authentification off.
+GET request with authentification off, trying to create a request from a resource that needs authorization.
 
 ```
 *** Proxy Server Settings *** 
@@ -132,10 +132,75 @@ Source IP address: 127.0.0.1
 Username: joseortizcostadev@gmail.com
 Password: 
 Success 200 OK
-{"login":"joseortizcostadev","id":11967132,"node_id":"MDQ6VXNlcjExOTY3MTMy","avatar_url":"https://avatars0.githubusercontent.com/u/11967132?....}
+{"login":"joseortizcostadev","id":11967132,"node_id":"....","avatar_url":"https://avatars0.githubusercontent.com/u/11967132?....}
 ```
 
+GET request with authentification off to a site which resources do not need authorization. 
 
+```
+Your option <enter a number>: 2
+Web authentication is off
+
+*** Proxy Server Settings *** 
+1. Turn web caching On
+2. Turn authentication On
+3. Turn private browsing Off
+4. Send a request (GET, HEAD OR POST): 
+5. Turn web proxy server off
+
+
+Your option <enter a number>: 4
+request> GET https://example.com
+Source IP address: 127.0.0.1
+Success 200 OK
+<!doctype html>
+<html>
+<head>
+    <title>Example Domain</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style type="text/css">
+    body {
+        background-color: #f0f0f2;
+        margin: 0;
+        padding: 0;
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        
+    }
+    div {
+        width: 600px;
+        margin: 5em auto;
+        padding: 2em;
+        background-color: #fdfdff;
+        border-radius: 0.5em;
+        box-shadow: 2px 3px 7px 2px rgba(0,0,0,0.02);
+    }
+    a:link, a:visited {
+        color: #38488f;
+        text-decoration: none;
+    }
+    @media (max-width: 700px) {
+        div {
+            margin: 0 auto;
+            width: auto;
+        }
+    }
+    </style>    
+</head>
+
+<body>
+<div>
+    <h1>Example Domain</h1>
+    <p>This domain is for use in illustrative examples in documents. You may use this
+    domain in literature without prior coordination or asking for permission.</p>
+    <p><a href="https://www.iana.org/domains/example">More information...</a></p>
+</div>
+</body>
+</html>
+
+```
 
 
 
