@@ -194,7 +194,7 @@ When users select this option, the server will turn on the web server proxy serv
 
 ```
 
-  * Proxy Server: turn web caching on
+   * Proxy Server: turn web caching on
   
   Once this option is selected, the user should be informed that the web caching option is on. Note how the next time the 
   menu is loaded when this option is active, the option has changed to "turn web caching Off". 
