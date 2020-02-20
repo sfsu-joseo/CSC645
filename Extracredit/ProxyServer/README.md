@@ -45,13 +45,13 @@ Web caching is on
 4. Send a request (GET, HEAD OR POST): 
 5. Turn web proxy server off
 ```
-Once the web caching system is active in the proxy server, all the GET requests done in option 4, need to be cached. Every time we send a request to a original server (i.e google), the proxy should check, first, if that resource already exist in the cache folder. Otherwise, the resource needs to be cached. The cache files contain the response from the original server (headers and body). The name of the files should be a hashed identifier with extension .pickle The following are examples of files cached by the proxy server. 
+Once the web caching system is active in the proxy server, all the GET requests done in option 4, need to be cached. Every time we send a request to a original server (i.e google), the proxy should check, first, if that resource already exists in the cache folder. Otherwise, the resource needs to be cached. The files cached contain the response from the original server (headers and body). The name of the files should be a hashed identifier with extension .pickle. The following are examples of files cached by the proxy server. 
 
 ```
 53d9b3a0-4c87-11ea-9d7f-784f4387efce.pickle
 d54442c6-4c86-11ea-9d7f-784f4387efce.pickle
 ```
-You should keep track in memory of the identifier of each file, last_modified_date, and the domain (server site). The next time the proxy server requests a resource that already exist in the cache. It should hand to the user the version cached. 
+You should keep track in memory of the identifier of each file, last_modified_date, and the domain (server site). The next time the proxy server requests a resource that already exists in the cache. It should hand to the user only the version cached. 
 
 ### Option 2: Turn authentication On.
 
@@ -71,11 +71,11 @@ Web authentication is on
 
 Note how option 2 now says "Turn authentication Off"
 
-When activated, this option should implement authentication services. There are sites that ask you to provide your credentials (if already registered in the site) in order to access some of their resources or to simply login into the site. After making a request, this option should ask first for username and password. See option 4 of this document to see examples about authentifications using requests.
+When activated, this option should implement authentication services. There are sites that ask you to provide your credentials (if already registered in the site) in order to access some of their resources or to simply login into the site. After making a request, this option should ask first for username and password. See option 4 of this document to see examples about authentications using requests.
 
 ### Option 3: Turn private browsing Off.
 
-By default, this option needs to be turned On automatically when the proxy server is activated for the first time. This option allow clients to mask the IP address of the machine performing the request to the original server. For instance, let's assume that a client has IP address 180.4.4.23, and the proxy server running in a different machine has IP address 167.7.9.87. So, if private browsing is active, and the client make a request to www.google.com, from the eyes of google the request is comming from IP address 167.7.9.87. However, the request is really comming from 180.4.4.23. Thus, the proxy server is hidding your IP address from the original server. This is usefull when browsing in private mode is required, or your IP has been blocked to access certain resources in a site. 
+By default, this option needs to be turned On automatically when the proxy server is activated for the first time. This option allows multiple clients to mask their IP addresses. For instance, let's assume that a client has IP address 180.4.4.23, and the proxy server running in a different machine has IP address 167.7.9.87. If private browsing is active, and the client makes a request to www.google.com then, from the eyes of google, the request is comming from IP address 167.7.9.87. However, the request is really comming from 180.4.4.23. Thus, the proxy server is hidding the client IP address from the original server. This is usefull when browsing in private mode is required, or the client's IP address has been blocked to access certain resources in a site. 
 
 ### Option 4: Send a request (GET, HEAD OR POST): 
 
@@ -87,15 +87,17 @@ GET requests are done by a client in order to get complete responses from origin
 
 * HEAD requests
 
-HEAD requests are different from GET requests. When a HEAD request is performed, the original server will send only the headers of the response (not the actual data such as HTML of a file). This is usefull when you need to check if the last-modified-date header of your resource cached is outdated and the original server has a newer version of the file you have in cache from that server. 
+HEAD requests are different from GET requests. When a HEAD request is performed, the original server will send only the headers of the response (not the actual data such as the HTML of a file). This is useful when you need to check if the last-modified-date header of your resource cached is outdated, and the original server has a newer version of the file you have in cache from that server. 
 
 * POST requests
 
-POST requests are done to add some sense of security to the data sent in the request. Normally, POST requests are done when you need to submit forms or any other resource that needs to be transmitted to the server in the body of the requests. 
+POST requests are done to add 'some sense' of security to the data sent in the request. Normally, POST requests are done when you need to submit forms or any other resource that needs to be transmitted to the server in the body of the requests. 
 
-### Examples for option 4. Note that in all the following examples, private web browsing was turned on automatically, so the source IP you see is not the client IP address (127.0.0.1), it is the proxy IP address running in a different machine. 
+### Examples for option 4. 
 
-GET request with authentification off trying to create a request to a resource that needs authorization.
+Note that in some of the following examples, private web browsing has been turned on automatically, so the source IP you see in most of them is not the client IP address (127.0.0.1), it is the proxy IP address running in a different machine. 
+
+GET request with authentication 'off', and trying to create a request to a resource that needs authorization.
 
 ```
 *** Proxy Server Settings *** 
@@ -112,7 +114,7 @@ Source IP address: 180.8.8.21
 401 Unauthorized. Activate authentication in your proxy server and try again.
 ```
 
-GET request with authentification on.
+GET request with authentication 'on'.
 
 ```
 Your option <enter a number>: 2
@@ -135,7 +137,7 @@ Success 200 OK
 {"login":"joseortizcostadev","id":11967132,"node_id":"....","avatar_url":"https://avatars0.githubusercontent.com/u/11967132?....}
 ```
 
-GET request with authentification turned off, and web cache turned on. Since it is the first time we access to the resource, it will cach the info in the cache but will show the entire response in screen. 
+GET request with authentication turned 'off', and web cache turned 'on'. Since this is the first time we access to the resource, the resource will be cached in the cache, but will be shown in screen. 
 
 ```
 Your option <enter a number>: 1
@@ -202,7 +204,7 @@ Success 200 OK
 
 ```
 
-GET request to the same resource as the one above. However, the resource this time is cached. In addition, we turned off private browsing and now it shows the real source IP address. (the one from the client)
+GET request to the same resource as the one above. However, since the resource this time is cached, it will show (cached) status. In addition, we turned 'off' private browsing, and now, it shows the real source IP address. (the one from the client)
 
 ```
 Your option <enter a number>: 3
@@ -233,7 +235,7 @@ Success! 200 OK
 
 ```
 
-POST request example with name and lastname. You can see in the response how those values are enblemmed into the body of the response.  
+POST request example with name and lastname. If you inspect the response, you cab see the name and last name embledded into the form key in the response body.   
 
 ```
 Your option <enter a number>: 4
@@ -266,7 +268,7 @@ Success 200 OK
 
 ```
 
-You also need to take into consideration failing requests, and inform the user with the appropiate message. For example, a HEAD request to google will fail with code status 301 (Moved permanently)
+Failing requests need to be taken also in consideration. For example, a HEAD requests to google will fail with code status 301 (Moved permanently)
 
 ```
 Your option <enter a number>: 4
@@ -299,7 +301,7 @@ function _F_installCss(c){}
 
 ### Option 5: Turn web proxy server off
 
-When this option is selected the proxy server is turned off, the proxy server should confirm if the user wants to show the main manu (the one from client-server network app). Otherwise, the proxy server will close the connection with the client. 
+When this option is selected the proxy server is turned 'off', the proxy server should confirm if the user wants to show the main manu (the one from client-server network app). Otherwise, the proxy server will close the connection with the client. 
 
 ```
 *** Proxy Server Settings *** 
