@@ -128,75 +128,70 @@ class Message:
 
     def get_bitfield(self):
         """
-        :return: the bitfield
+        TODO: get the bitfield payload
+        :return: the bitfield payload 
         """
-        return self._bitfield
+        pass # your code here
 
     def get_bitfield_piece(self, piece_index):
         """
+        TODO: gets a piece from the bitfield
         :param piece_index:
         :return: the piece bitfield located at index 'piece_index'
         """
-        return self._bitfield['bitfield'][piece_index]
+        pass # your code here
 
     def get_bitfield_block(self, piece_index, block_index):
         """
+        TODO: gets a block from the bitfield
         :param piece_index:
         :param block_index:
-        :return:
+        :return: the block bit located at index 'block_index'
         """
-        return self._bitfield['bitfield'][piece_index][block_index]
+        pass # your code here
 
     def is_block_missing(self, piece_index, block_index):
         """
+        TODO: determines if a block is missing (missing blocks are set to bit 0)
         :param piece_index:
         :param block_index:
         :return: True if the block is missing. Otherwise, returns False
         """
-        if self._bitfield['bitfield'][piece_index][block_index]:
-            return False
-        return True
+        pass # your code here
 
     def is_piece_missing(self, piece_index):
         """
+        TODO: determines if a piece is missing (missing pieces has at least one block set to bit 0)
         :param piece_index:
         :return: True if the piece is missing. Otherwise, returns False
         """
-        piece = self._bitfield['bitfield'][piece_index]
-        for block_index in range(len(piece)):
-            if self.is_block_missing(piece_index, block_index):
-                return True
-        return False
+        pass # your code here
 
     def next_missing_block(self, piece_index):
         """
+        TODO: finds the next missing block
         :param piece_index:
         :return: the next missing block index
         """
-        piece = self._bitfield['bitfield'][piece_index]
-        for block_index in range(len(piece)):
-            if self.is_block_missing(piece_index, block_index):
-                return block_index
-        return -1
+        pass # your code here
 
     def next_missing_piece(self):
         """
+        TODO: finds the next missing piece
         :return: the next missing piece index
         """
-        for piece_index in range(len(self._bitfield['bitfield'])):
-            if self.is_piece_missing(piece_index):
-                return piece_index
-        return -1
+        pass # your code here
 
     def set_block_to_completed(self, piece_index, block_index):
         """
+        TODO: set the block represented by the piece_index and block_index to b'1' or True
         :param piece_index:
         :param block_index:
-        :return:
+        :return: VOID
         """
-        self._bitfield['bitfield'][piece_index][block_index] = 0
+        pass # your code here
 
-
+# This is a unit test class to test your code, please do not modify it. 
 class Lab7UnitTests(unittest.TestCase):
     """
     Description: This class provides unit tests for lab 7 in CSC645 Computer Networks
