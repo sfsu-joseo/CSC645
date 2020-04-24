@@ -112,19 +112,21 @@ class Message:
 
     def init_bitfield(self, num_pieces):
         """
-        Initializes the bitfield with predefined values
+        TODO: Initializes the bitfield with all the pieces set to missing: b'00000000'
+        NOTE: Initialization of the bitarry must be in bytes. You can use the 
+        library bitarray to create pieces like this: bitarray(8)
         :param num_pieces: the number of pieces defined in the .torrent file
         :return: Void
         """
         size_bitfield = math.ceil(num_pieces / 8)
         spare_bits = (8 * size_bitfield) - num_pieces
         for i in range(size_bitfield - 1):
-            piece_bitfield = bitarray(8)
-            piece_bitfield.setall(0)
-            self._bitfield['bitfield'].append(piece_bitfield)
-        spare_piece_bitfield = bitarray(spare_bits)
-        spare_piece_bitfield.setall(0)
-        self._bitfield['bitfield'].append(spare_piece_bitfield)
+            # create a bitarray (piece) of 8 bits size
+            # set all the bits to 0 (missing piece)
+            # add the new piece to the bitfield (self._bitfield['bitfield])
+        # create a new bitarray (piece) of spare bits size
+        # # set all the bits to 0 (missing piece)
+        # add the new piece to the bitfield (self._bitfield['bitfield])
 
     def get_bitfield(self):
         """
