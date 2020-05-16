@@ -8,7 +8,7 @@ carefully. The file provided in this lab has been partially implemented by your 
 
 ### How to create a client socket. 
 
-1. In order to create a client socket, first you need to import the socket library builtin in the standad Python libraries.
+1. In order to create a client socket, you, first,  need to import the socket library builtin in the standad Python libraries.
 The socket library provides all the low level functions needed.
 2. The following line of code creates a client socket. So, you can use that socket to call 
 methods such as connect(), send(), recv()...
