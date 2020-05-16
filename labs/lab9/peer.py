@@ -3,6 +3,8 @@ Lab 9: Routing and Handing
 Implement the routing and handling functions
 """
 from server import Server # assumes server.py is in the root directory.
+from client import Client # assumes server.py is in the root directory.
+from routing import Routing 
 
 class Peer (Server):
 
@@ -12,7 +14,7 @@ class Peer (Server):
 
     def __init__(self, server_ip_address):
         Server.__init__(server_ip_address, self.SERVER_PORT)
-        self.routing_table = ()
+        self.routing_table = Routing()
 
 
     def run_server(self):
