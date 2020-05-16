@@ -31,6 +31,17 @@ class Peer ():
         :param piece_index: the piece index belonging to all the blocks that must be removed from the routing table
         return: VOID
         """
+        pass # your code here 
+    
+    def is_piece_validated(piece):
+        """
+        TODO: validates a piece
+              1. hash the piece passed as a parameter
+              2. get the the piece in from the .torrent with the same index
+              3. compare hashes
+        :param piece the piece to be validated
+        :return True if the piece is validated. Otherwise, returns false. 
+        """
         pass # your code here
         
     def add_entry_to_routing_table(client_id, block):
