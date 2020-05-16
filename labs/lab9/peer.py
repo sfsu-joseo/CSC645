@@ -4,7 +4,7 @@ Implement the routing and handling functions
 """
 from server import Server # assumes server.py is in the root directory.
 from client import Client # assumes server.py is in the root directory.
-from routing import Routing 
+from routing import Routing # assumes routing.py is in the root directory.
 
 class Peer (Server):
 
