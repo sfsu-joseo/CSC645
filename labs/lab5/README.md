@@ -54,8 +54,9 @@ addresses of all the peers in the swarm. In a decentralized network, all the pee
 A torrent file is a file that contains meta-info (not the actual data) of the file that is being shared 
 on the swarm by all peers connected to it. It normally has extension .torrent and contain useful info about
 the trackers, and the pieces of the file being shared in the network such as length, SHA1 hashes of all the 
-pieces.... (more about this in lab #6)
-### Metainfo 
+pieces.... see more details in Metainfo section below
+
+### Torrent File Metainfo 
 
 Create a .torrent file containing all the metainfo related to the file you are willing to share in the network. 
  
@@ -82,9 +83,6 @@ Create a .torrent file containing all the metainfo related to the file you are w
     * pieces: a hash list, i.e., a concatenation of each piece's SHA-1 hash. As SHA-1 returns a 160-bit hash, pieces will be a string whose length is a multiple of 20 bytes. If the torrent contains multiple files, the pieces are formed by concatenating the               files in the order they appear in the files dictionary (i.e. all pieces in the torrent are the full piece length except for the last piece, which may be shorter).
 
 All strings must be UTF-8 encoded, except for pieces, which contains binary data
-
-
-
 
 ## Client and Server Sockets Roles in P2P Networks
 
