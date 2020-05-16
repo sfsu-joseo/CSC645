@@ -4,34 +4,44 @@ Implement the routing and handling functions
 """
 from server import Server # assumes server.py is in the root directory.
 from client import Client # assumes server.py is in the root directory.
-from routing import Routing # assumes routing.py is in the root directory.
 
-class Peer (Server):
+class Peer ():
 
     SERVER_PORT = 5000
     CLIENT_MIN_PORT_RANGE = 5001
     CLIENT_MAX_PORT_RANGE = 5010
 
     def __init__(self, server_ip_address):
-        Server.__init__(server_ip_address, self.SERVER_PORT)
-        self.routing_table = Routing()
-
-
-    def run_server(self):
-        """
-        Already implemented. puts this peer to listen for connections requests from other peers
-        :return: VOID
-        """
-        self.run()
-
+        self.routing_table = []
+    
+    
     # Your code from lab 8 can be added here. 
-
-    def routing(self, piece, file_id, swarm_id):
+        
+    def get_block(client):
         """
-        TODO: route a piece that was received by this peer, then add that piece to the routing table
-        :param piece:
-        :param file_id:
-        :param swarm_id:
-        :return:
+        TODO: get a block 
+        :param client: the client socket that is retrieving the block
         """
+    
+    def remove_piece_from_routing_table(piece_index):
+        """
+        TODO: deletes all the blocks of a piece from the routing table
+              note that this method can be only called after the piece has
+              been validated via hash
+        :param piece_index: the piece index belonging to all the blocks that must be removed from the routing table
+        return: VOID
+        """
+        pass # your code here
+        
+    def add_entry_to_routing_table(client_id, block):
+        """
+        TODO: Add this block to the routing table 
+        :param client_id: the client id socket in charge of receiving this block. 
+        :param block: the payload of the block (the actual data)
+        :param block_flag: Set to 1 bit if this is the last block to complete the piece. Otherwise, set to 0 bit
+        return: VOID
+        """
+        routing_table_entry = {'peer_id': 0, 'swarm_id': 0, 'client_id': client_id, 'piece_index': 0, 
+                               'block_index': 0,  'block': block, 'flag': block_flag} 
+        
         pass # your code here
