@@ -25,7 +25,7 @@ You can implement this project either in both python 2 or 3 versions. However, y
 
 ## Project Template. 
 
-This project template consist in five classes that are described in detail below: 
+This project template consist in two folders (server and client) with 4 classes that are described in detail below: 
 
 ### Server 
 
