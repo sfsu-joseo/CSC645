@@ -1,4 +1,4 @@
-# P2P Decentralized Network 
+# P2P Decentralized Network with BitTorrent Protocol
 
 Please use this README file to provide the following documentation for this project:
 
