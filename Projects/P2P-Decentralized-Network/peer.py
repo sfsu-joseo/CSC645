@@ -7,7 +7,6 @@ class Peer():
     LEECHER = 1;
     PEER = 0;
     
-
     def __init__(self):
         self.role = PEER # default role
         pass
