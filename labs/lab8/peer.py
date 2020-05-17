@@ -17,8 +17,9 @@ class Peer:
     CLIENT_MAX_PORT_RANGE = 5010
 
     def __init__(self):
+       self.server = None
        self.run_server() # starts the server
-
+       self.run_tracker(self.server)
 
     def run_server(self):
         """
@@ -31,7 +32,8 @@ class Peer:
         TODO: 1. Create and run a threaded tracker
         :param server: the server instance. 
         """
-        pass # your code here
+        if server:
+            pass # your code here
     
     def _connect_to_peer(self, client_port_to_bind, peer_ip_address):
         """
