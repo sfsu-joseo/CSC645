@@ -7,25 +7,32 @@ therefore, to make sure that you understood how peers perform the downloading
 and uploading process in the network, and also which challenges you may encounter
 when implementing those functionalities. 
 """
-from server import Server
-class Peer (Server):
+from server import Server # assumes that your server file is in this folder
+from client import Client # assumes that your client file is in this folder
+from tracker import Tracker  # assumes that your Tracker file is in this folder
+class Peer:
 
     SERVER_PORT = 5000
     CLIENT_MIN_PORT_RANGE = 5001
     CLIENT_MAX_PORT_RANGE = 5010
 
-    def __init__(self, server_ip_address):
-        Server.__init__(server_ip_address, self.SERVER_PORT)
+    def __init__(self):
+       self.run_server() # starts the server
 
 
     def run_server(self):
         """
-        Already implemented. puts this peer to listen for connections requests from other peers
-        :return: VOID
+        TODO: 1. Create and run a threaded server object 
         """
-        self.run()
-
-
+        pass # your code here
+    
+    def run_tracker(server):
+        """
+        TODO: 1. Create and run a threaded tracker
+        :param server: the server instance. 
+        """
+        pass # your code here
+    
     def _connect_to_peer(self, client_port_to_bind, peer_ip_address):
         """
         TODO: Create a new client object and bind the port given as a
