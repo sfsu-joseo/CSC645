@@ -80,7 +80,7 @@ See P2P.pdf for more info about how to compute temporal upload and downloads rat
 
 # HTPBS for Showing Pieces Downloading/Uploading Progresses 
 
-In order to show the progress of the pieces your peer is uploading or downloading to/from the P2P network, you can use the htpbs (horizontal threaded progress bars) library. This library tracks the progress of threaded jobs and is costomizable to for your project. Exactelly what you need for this project!. 
+In order to show the progress of the pieces your peer is uploading or downloading to/from the P2P network, you can use the htpbs (horizontal threaded progress bars) library. This library tracks the progress of threaded jobs and is costomizable to for your project. Exactelly what you need for this project!. For more info about this library: https://pypi.org/project/htpbs/
 
 ### Install with PIP
 
