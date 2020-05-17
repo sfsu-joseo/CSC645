@@ -118,7 +118,7 @@ So, how can we fix this problem? That is your job to figure it out in this lab. 
 best guess to solve this problem. You won't be penalized if you do not know the answers, but you'll be if 
 you don't even try to provide an answer. 
 
-### Your answer here
+### Write your response to this lab here
 
 
 
