@@ -2,8 +2,9 @@
 Lab 9: Routing and Handing
 Implement the routing and handling functions
 """
-from server import Server # assumes server.py is in the root directory.
-from client import Client # assumes server.py is in the root directory.
+from server import Server # assumes server.py is in this directory.
+from client import Client # assumes client.py is in this directory.
+from tracker import Tracker # assumes tracker.py is this directory.
 
 class Peer ():
 
