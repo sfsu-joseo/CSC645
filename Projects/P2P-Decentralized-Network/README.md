@@ -90,7 +90,7 @@ pip3 install htpbs
 
 # Submission Guidelines 
 
-This project is due the last day of the semester. After you complete and test your project, go to the assignements table, located in main README file, and set this project to "done". Projects that are not set to "done" in the table of assignments won't be graded because I will assume that they haven't been completed. 
+This project is due the last day of the semester. After you complete and test your project, go to the assignments table, located in main README file, and set this project to "done". Projects that are not set to "done" in the table of assignments won't be graded because I will assume that they haven't been completed. No exceptions here!!!. 
   
   
  
