@@ -88,14 +88,9 @@ In order to show the progress of the pieces your peer is uploading or downloadin
 pip3 install htpbs
 ```
 
-
-
-
-
 # Submission Guidelines 
 
-The due data of this project is on the last day of the semester for this class. After you complete and test your project, send an email to the class instructor jortizco@sfsu.edu with the link to the source code of your project in the master branch of your class repository 
-the subject of the email must be: CSC545-01 Computer Networks: P2P Project Link
+This project is due the last day of the semester. After you complete and test your project, go to the assignements table, located in main README file, and set this project to "done". Projects that are not set to "done" in the table of assignments won't be graded because I will assume that they haven't been completed. 
   
   
  
