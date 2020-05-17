@@ -57,6 +57,19 @@ The peer class is the main class of this network. It must to have the following 
 
 4. No template is provided in this project since you can rehuse the client, server and peer classes from labs and other projects
 
+# General Implementation Guidelines 
+
+Note this are only high level guidelines. Your implementation will need to take into consideration more specific details to meet the minimum functionality/requirements in this app. 
+
+1. Download the age.txt file and age.torrent file from ilearn 
+2. Change the announce value of your age.torrent to the ip address of the machine where your first seeder will be run. 
+3. Put the age.torrent file in the torrents folder of the project in all the machines you run a peer. 
+4. Run your first peer: your first peer in the network is the announce and the first seeder in the network, then run the server and the tracker of this peer and finally wait for other peer connections. Once a peer connects, the server accepts the peer (if not chocked and the peer is interested) and then pass the request to the tracker. The tracker will add this peer to the list of peers connected to the network and then will broadcast this updated list to all the peers connected in the network. Note the seeder is just uploading data in this swarm. It does not download any data. However, a seeder may be a seeder in swarm X and a peer in swarm Y. Think about this because this concept is important......
+5. Run the next peer in a different machine. This peer should scan the age.torrent file, extract the announce ip address, name of the file (age.txt) and check that this ip address is not the same as the one this peer is using, then, it should go the the shareable folder and check if it has the file age,txt. If the file is there, then this peer should automatically set its status to seeder. Otherwise, the status is kept as peer. In any of both cases, this peer connects to the announcer to get the list of ip_addresses connected to the network. If seeder, the seeder just run the server and the tracker and wait there for connections. If peer, then do step 6. 
+6. If peer (not seeder nor announce) it connects to all the peers in the network running a client socket per connection. 
+7. When a peer connects to another peer, after the initial handshake, the peer trying to connect sends to the other peer if it is interested or not, then the other peers send back a response with choked or non-choked, if not chocked then this peer sends its bitfield, the other peer will see which blocks are missing, and will wait for a request from this peer. Once this peer sends a requests asking for a block, the sharing process begins. 
+8.  
+
 # Submission Guidelines 
 
 The due data of this project is on the last day of the semester for this class. After you complete and test your project, send an email to the class instructor jortizco@sfsu.edu with the link to the source code of your project in the master branch of your class repository 
