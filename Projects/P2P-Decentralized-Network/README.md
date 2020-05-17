@@ -78,6 +78,20 @@ In this assignment, peers and seeders are implementing the tit-for-tat protocol.
 
 See P2P.pdf for more info about how to compute temporal upload and downloads rates. 
 
+# HTPBS for Showing Pieces Downloading/Uploading Progresses 
+
+In order to show the progress of the pieces your peer is uploading or downloading to/from the P2P network, you can use the htpbs (horizontal threaded progress bars) library. This library tracks the progress of threaded jobs and is costomizable to for your project. Exactelly what you need for this project!. 
+
+### Install with PIP
+
+```python 
+pip3 install htpbs
+```
+
+
+
+
+
 # Submission Guidelines 
 
 The due data of this project is on the last day of the semester for this class. After you complete and test your project, send an email to the class instructor jortizco@sfsu.edu with the link to the source code of your project in the master branch of your class repository 
