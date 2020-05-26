@@ -6,12 +6,12 @@
 # Student Name:
 # Student ID:
 # Student Github Username:
-# Instructions: Read each problem carefully, and implement them correctly. Your grade in labs is based on passing
-#               all the unit tests provided.
-#               The following is an example of output for a program that pass all the unit tests.
+# Instructions: Read each problem carefully, and implement them correctly.
+#               Your grade in labs is based on passing all the unit tests provided.
+#               The following is an example of output for a program that passes all the unit tests.
 #               Ran 3 tests in 0.000s
 #               OK
-#               No partial credit will be given. Labs are done in class and must be submitted by 9:45 pm on iLearn.
+#               No partial credit will be given.
 ########################################################################################################################
 
 import unittest # don't modify this line of code.

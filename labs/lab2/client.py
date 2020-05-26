@@ -6,10 +6,7 @@
 # Student Name:
 # Student ID:
 # Student Github Username:
-# Instructions: Read each problem carefully, and implement them correctly. Your grade in labs is based on passing
-#               all the unit tests provided.
-#               No partial credit will be given. Labs must be completed in class, and must be commited to your
-#               personal repository by 9:45 pm on iLearn.
+# Instructions: Read each problem carefully, and implement them correctly.  No partial credit will be given.
 ########################################################################################################################
 
 # don't modify this imports.
@@ -93,11 +90,14 @@ class Client(object):
         """
 # main execution
 if __name__ == '__main__':
-    server_ip_address = "127.0.0.1"  # TODO: change this to the server ip address provided by instructor in class
-    server_port = 12000
+    server_ip_address = "127.0.0.1"  # don't modify for this lab only
+    server_port = 12000 # don't modify for this lab only
     client = Client()
     client.connect(server_ip_address, server_port)
 
-# If your data was successfully sent to the server run by the instructor in class, you'll get full credit for this lab.
+# How do I know if this works?
+# when this client connects, the server will assign you a client id that will be printed in the client console
+# Your server must print in console all your info sent by this client
+# See README file for more details
 
 

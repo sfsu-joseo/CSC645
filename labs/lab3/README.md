@@ -8,7 +8,7 @@ to handle them in the server side.
 
 ### How to create a TCP server socket. 
 
-1. In order to create a server socket, first you need to import the socket library builtin in the standad Python libraries.
+1. In order to create a server socket, first you need to import the socket library builtin in the standard Python libraries.
 The socket library provides all the low level functions needed.
 
 2. The following line of code creates a server socket. So, you can use that socket to call 
@@ -56,8 +56,8 @@ client assumes that since a valid client id has been assigned to it by the serve
 ```python
 import pickle 
 data = {'clientid': client_id} 
-serialezed_data = pickle.dumps(data) 
-clienthandler.send(serialezed_data) # data sent to the client. 
+serialized_data = pickle.dumps(data) 
+clienthandler.send(serialized_data) # data sent to the client. 
 ```
 
 6. Receiving data. The way the server receives data is similar to the client. However, in this case, 
@@ -74,15 +74,15 @@ serialized_data = pickle.loads(data_from_client)
 7. When multiple clients are connected. How a clienthandler knows to which client send the data if the 
 low level send() method does not provide a option to define the client recipient? Here is where your
 CSC415 knowledge comes in handy. The clienthandler is a forked process from the client when it connects. 
-Both of them share the same client id which basically is the pid of the process. Therfore, the clienthandler
-related to a client process knows exactely where to send the message based on the pid. This is already 
+Both of them share the same client id which basically is the pid of the process. Therefore, the clienthandler
+related to a client process knows exactly where to send the message based on the pid. This is already 
 implemented by the sockets library. So, you don't need to worry about this.
 
 ## Important Notes
 
 1. The server must handle errors and exceptions properly. 
-2. Server must not be stopped when a exception ocurrs. Inform the user about the error instead 
-in server console when a execption ocurrs. 
+2. Server must not be stopped when a exception occurs. Inform the user about the error instead 
+in server console when a exception occurs. 
 3. In this lab, you will learn to handle only one client at a time. In next labs, you'll learn how to
 handle multiple clients connections.  
 

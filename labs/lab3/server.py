@@ -6,11 +6,8 @@
 # Student Name:
 # Student ID:
 # Student Github Username:
-# Lab Instructions: No partial credit will be given. Labs must be completed in class, and must be committed to your
-#               personal repository by 9:45 pm.
-# Program Running instructions:
-#               python server.py  # compatible with python version 2
-#               python3 server.py # compatible with python version 3
+# Lab Instructions: No partial credit will be given in this lab
+# Program Running instructions: python3 server.py # compatible with python version 3
 #
 ########################################################################################################################
 
