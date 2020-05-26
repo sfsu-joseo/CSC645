@@ -6,7 +6,7 @@
 
 
 import math
-from bitarray import bitarray
+from bitarray import bitarray # you must install this library
 import unittest
 
 
@@ -124,6 +124,7 @@ class Message:
             # create a bitarray (piece) of 8 bits size
             # set all the bits to 0 (missing piece)
             # add the new piece to the bitfield (self._bitfield['bitfield])
+            pass
         # create a new bitarray (piece) of spare bits size
         # # set all the bits to 0 (missing piece)
         # add the new piece to the bitfield (self._bitfield['bitfield])
