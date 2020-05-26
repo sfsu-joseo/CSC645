@@ -42,7 +42,11 @@ Server listening at 127.0.0.1/12005
 ```
 ### ClientHandler
 
-The client handler class is located in thee machine that is running the server. It is in charge of processing all the requests sent by clients, that needs to be processed by the server. It uses the server methods to send responses.  
+The client handler class is located in thee machine that is running the server. When a client is accepted by the server, 
+the server creates a child process of the client (fork), and the child client is linked to its parent during all the 
+process until the socket parent disconnects from the network. The client handler helps to create a line of communication
+between the parent and the child sockets, and also helps to organize how data is sent between them. This also helps the server
+to being more independent (i.e same server can be reused in more applications)  
 
 ### Client
 
