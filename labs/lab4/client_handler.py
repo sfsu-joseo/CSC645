@@ -23,7 +23,8 @@ class ClientHandler:
         """
         Class constructor already implemented for you.
         :param server_instance: passed as 'self' when the object of this class is created in the server object
-        :param clientsocket: the accepted client on server side
+        :param clientsocket: the accepted client on server side. this handler, by itself, can send and receive data
+                             from/to the client that is linked to.
         :param addr: addr[0] = server ip address, addr[1] = client id assigned buy the server
         """
         self.server_ip = addr[0]
