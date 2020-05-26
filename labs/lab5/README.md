@@ -7,7 +7,7 @@ requeriments for your next project in this class; a P2P decentralized network
 So far, all the labs were focused on client-server network architectures. Although the real internet works mostly
 under that concept, many network engineers still think that peer-to-peer networks are the way to go to build 
 the network architecture of the future internet because those networks will be decentralized, limiting the internet 
-control of goverments and big companies. Think about it, would a company like facebook exist in a internet 
+control of governments and big companies. Think about it, would a company like facebook exist in a internet 
 ruled by a P2P architecture? Probably it wouldn't because host would have total control over the content they 
 share. 
 
@@ -54,11 +54,11 @@ addresses of all the peers in the swarm. In a decentralized network, all the pee
 A torrent file is a file that contains meta-info (not the actual data) of the file that is being shared 
 on the swarm by all peers connected to it. It normally has extension .torrent and contain useful info about
 the trackers, and the pieces of the file being shared in the network such as length, SHA1 hashes of all the 
-pieces.... see more details in Metainfo section below
+pieces.... see more details in Meta-info section below
 
-### Torrent File Metainfo 
+### Torrent File Meta-info 
 
-Create a .torrent file containing all the metainfo related to the file you are willing to share in the network. 
+Create a .torrent file containing all the meta-info related to the file you are willing to share in the network. 
  
 * A torrent file contains a list of files and integrity metadata about all the pieces, and optionally contains a list of trackers.
 
@@ -76,11 +76,14 @@ Create a .torrent file containing all the metainfo related to the file you are w
        
     * length: size of the file in bytes (only when one file is being shared)
 
-    * name: suggested filename where the file is to be saved (if one file)/suggested directory name where the files are to be saved (if             multiple files)
+    * name: suggested filename where the file is to be saved (if one file)/suggested directory name where the files are 
+    to be saved (if multiple files)
     
     * piece length: number of bytes per piece. This is commonly 28 KiB = 256 KiB = 262,144 B.
     
-    * pieces: a hash list, i.e., a concatenation of each piece's SHA-1 hash. As SHA-1 returns a 160-bit hash, pieces will be a string whose length is a multiple of 20 bytes. If the torrent contains multiple files, the pieces are formed by concatenating the               files in the order they appear in the files dictionary (i.e. all pieces in the torrent are the full piece length except for the last piece, which may be shorter).
+    * pieces: a hash list, i.e., a concatenation of each piece's SHA-1 hash. As SHA-1 returns a 160-bit hash, pieces will 
+    be a string whose length is a multiple of 20 bytes. If the torrent contains multiple files, the pieces are formed
+     by concatenating the files in the order they appear in the files dictionary (i.e. all pieces in the torrent are the full piece length except for the last piece, which may be shorter).
 
 All strings must be UTF-8 encoded, except for pieces, which contains binary data
 
