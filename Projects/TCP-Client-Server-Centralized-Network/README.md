@@ -177,7 +177,8 @@ John> It looks like Alice was in a hurry.
 Jose> agree. 
 John> I am leaving too. Take care Bob. Bye.
 
-****** TCP Message App ******
+
+****** TCP Client-Server Network ******
 -----------------------
 Options Available:
 1. Get user list
@@ -185,9 +186,9 @@ Options Available:
 3. Get my messages
 4. Create a new chat room
 5. Join an existing chat room
-6. Disconnect from server
+6. Turn web proxy server on
+7. Disconnect from server
 
-Your option <enter a number>:
 
 ```
 
