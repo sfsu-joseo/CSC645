@@ -41,9 +41,9 @@ class Client(object):
         :param server_port:
         :return:
         """
-        #TODO: 1. use the client socket implement a connection from this client to the server using the server ip and port
+        #TODO: 1. use the self.client to create a connection with the server
 
-        #TODO: 2. once the client creates a succesful connection the server will send the client id to this client.
+        #TODO: 2. once the client creates a successful connection, the server will send the client id to this client.
         #      call the method set_client_id() to implement that functionality.
 
         # data dictionary already created for you. Don't modify.

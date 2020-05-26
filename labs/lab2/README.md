@@ -2,7 +2,12 @@
 Please read this README file before class and use this as a reference during the lab session. 
 
 In this lab, students will learn how to create a TCP client socket. Please read the instructions provided in this lab 
-carefully. The file provided in this lab has been partially implemented by your instructor. Your job in this lab is to implement only the parts marked as TODO. 
+carefully. 
+
+The client.py file provided in this lab has been partially implemented by your instructor. 
+Your job in this lab is to implement only the parts marked as TODO in the client.py file.
+
+Please do not modify the server.py file. You will implement a customized server in next lab.  
 
 ## Useful hints to follow in this lab 
 
@@ -82,12 +87,33 @@ while True:
 ```
 
 
-## Testing you client socket
+## Testing you client socket 
 
-At the beginning of the lab, the instructor will run a TCP server program that accepts multiple clients. The console 
-with the output of the program will be show to all the class in the class projector. The IP address and port of the 
-server will be given to you in class. 
+Note: client.py and server.py must be in the same machine in this lab. In next labs, they will run in different machines. 
 
-You'll get full grade in this lab only if your TCP client program successfully connects to the server running in the 
-class projector. Once your client program connects to the server, the server console will show your name, student id, 
-and github username in the class projector.
+Run your server: 
+
+```shell script
+python3 server.py
+Listening at 127.0.0.1/12000 # waiting for clients
+``` 
+
+Run your client:
+
+```shell script
+python3 client.py 
+# sent by server. Note that your client id may be different. It is assigned automatically by the server
+Client id 51669 assigned by server 
+
+```
+
+Server receives data from client
+
+```shell script
+Listening at 127.0.0.1/12000
+# sent by client after it connects. It will print your name, github username and student id
+Connected: Student: Jose Ortiz, Github Username: joseortizcostadev, sid: 913774100 # after client connects
+```
+
+You'll get full grade in this lab only if your TCP client program successfully connects to the server. Once your client 
+program connects to the server, the server must print your name, github username and student id sent by the client.
