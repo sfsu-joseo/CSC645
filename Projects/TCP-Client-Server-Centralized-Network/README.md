@@ -533,11 +533,11 @@ Your option <enter a number>:
 
 ## Running the project, 
 
-You must follow exactly this instructions in order to run and test your project. If I cannot run your project, as the following guidelines state, you'll get a zero in this project no matter how much work have you put on it. So, test it properly before final submission. 
+You must follow exactly this instructions in order to run and test your project. If I cannot run your project, as the following guidelines state, you'll get a zero in this project. No exceptions here!. So, test it properly before final submission. 
 
 This project consist in two main entities, the server and the client. Server and client must be run in different machines located in the same LAN. (Local Area Network). There are other additional classes that must be in the following machines. 
 
-The files client_handler.py, and menu.py must be located in the same directory as the server.py file. The file client_helper.py must be located in the same directory as the client.py file. 
+The files client_handler.py, and menu.py must be located in the same directory as the server.py file.  
 
 Additionally, This program must be compatible with the following OS architectures: Linux, Windows and macOS
 
