@@ -4,7 +4,7 @@ Please use this README file to provide the following documentation for this proj
 
 * Your name and student id
 * General description of the project (a few sentences)
-* If you used external Python modules/libraries. Provide a requeriments.txt file  
+* If you used external Python modules/libraries. Provide a requirements.txt file  
 * Python version and compatibility issues (if any)
 * Clear and specific instructions about how to run your project. If your project does not run or contains errors, you'll get a 0 in the project no matter how much work you put on it. So, test your code properly and make sure that it runs without errors.
 * A few sentences about all the challenges you found during the implementation of this project and how you overcame them. Please be honest here. 
@@ -37,9 +37,9 @@ The peer class is the main class of this network. It must to have the following 
   
 ### General 
 
-  * Changing status ( i.e from peer to seeder ), and therfore, changing services provided. 
+  * Changing status ( i.e from peer to seeder ), and therefore, changing services provided. 
   
-  * Being able to understand the Peer Wire Protocol which is in chargue of handling the communication and messages sent between peers 
+  * Being able to understand the Peer Wire Protocol which is in charge of handling the communication and messages sent between peers 
   
   * Implementing scalability: being able to be connected to multiple swarms sharing multiple files at the same time. 
   
@@ -53,9 +53,9 @@ The peer class is the main class of this network. It must to have the following 
 
 2. Provide correct and complete documentation. Make sure to specify in your docs how to run your program and the Python version you used to implement it. 
 
-3. Your project will be graded based on completness and correctness. For each services that is not implemented, you´ll get points deducted. 
+3. Your project will be graded based on completeness and correctness. For each services that is not implemented, you´ll get points deducted. 
 
-4. No template is provided in this project since you can rehuse the client, server and peer classes from labs and other projects
+4. No template is provided in this project since you can reuse the client, server and peer classes from labs and other projects
 
 # General Implementation Guidelines 
 
