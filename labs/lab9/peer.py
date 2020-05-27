@@ -1,6 +1,7 @@
 """
 Lab 9: Routing and Handing
 Implement the routing and handling functions
+Note: Include in this Peer class all the implemented methods from Peer class in lab 8.
 """
 from server import Server # assumes server.py is in this directory.
 from client import Client # assumes client.py is in this directory.
@@ -13,16 +14,40 @@ class Peer ():
     CLIENT_MAX_PORT_RANGE = 5010
 
     def __init__(self, server_ip_address):
-        self.routing_table = []
+        self.routing_table = {} # empty routing table
     
     
-    # Your code from lab 8 can be added here. 
+    # Your code from peer.py in lab 8 can be added here.
+
+    def _add_entry_to_routing_table(self, peer_id, piece_index, block_index, block_pointer, block_flag):
+        """
+        TODO: adds an entry to the routing table. HINT: use the hash_info as the key in the routing table.
+        TODO: NOTE: this method must be executed inside the process_block() method
+        :param peer_id: the id of the peer that is sending this block
+        :param piece_index: the index of the piece this block belongs. (piece index starts at 0)
+        :param block_index: the block index (block index starts at 0)
+        :param block_data: the block
+        :param block_flag: Set to 1 bit if this is the last block to complete the piece. Otherwise, set to 0 bit
+        :return: VOID
+        """
+        routing_table_entry = {'hash_info': hash_info, 'peer_id': peer_id, 'piece_index': piece_index,
+                               'block_index': block_index, 'block_pointer': block_pointer, 'flag': block_flag}
+
+        pass  # your code here
         
-    def get_block(client):
+    def process_block(self, peer_id, piece_message):
         """
-        TODO: get a block 
-        :param client: the client socket that is retrieving the block
+        TODO: takes the piece message sent by another peer (self.piece from message.py) and extracts all its data
+        TODO: if the block is not the last block of the piece, then save the block data in a tmp file in disk,
+              and create a pointer to that file. To optimize this process, you should keep your blocks data organized
+              in the same file using a custom criteria (i.e blocks from the same hash_info file)
+        TODO: using the data extracted from the piece message, and the pointer to the block data, add the entry to the routing table.
+
+        :param peer_id: the peer id that sent the message
+        :param piece_message: the self.piece message containing the payload representing the block data
+        :return: VOID
         """
+        return 0 # return the block
     
     def remove_piece_from_routing_table(piece_index):
         """
@@ -43,17 +68,6 @@ class Peer ():
         :param piece the piece to be validated
         :return True if the piece is validated. Otherwise, returns false. 
         """
-        pass # your code here
+        return False # your code here
         
-    def add_entry_to_routing_table(client_id, block):
-        """
-        TODO: Add this block to the routing table 
-        :param client_id: the client id socket in charge of receiving this block. 
-        :param block: the payload of the block (the actual data)
-        :param block_flag: Set to 1 bit if this is the last block to complete the piece. Otherwise, set to 0 bit
-        return: VOID
-        """
-        routing_table_entry = {'peer_id': 0, 'swarm_id': 0, 'client_id': client_id, 'piece_index': 0, 
-                               'block_index': 0,  'block': block, 'flag': block_flag} 
-        
-        pass # your code here
+
