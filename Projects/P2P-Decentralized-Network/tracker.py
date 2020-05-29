@@ -2,7 +2,7 @@ from server import Server
 
 
 class Tracker:
-    def __init__(self, server_instance):
+    def __init__(self, server):
         self.server = server
         self.torrent_info_hash = self._get_torrent_info_hash()
 
