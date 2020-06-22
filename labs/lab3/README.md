@@ -91,10 +91,11 @@ handle multiple clients connections.
 
 Since you already have a client program from lab #2, try to run your server program first in a terminal 
 windows using your localhost as the IP address for your server and bind a random port to it (i.e 12000). 
-Next, try to create a connection between your client and server. Also, try to share some data between them. 
+Next, try to create a connection between your client and server. The output from this lab should be the 
+same as the one from lab 2. However, this time you'll be using your own server and client. 
 
-For this lab is ok if your server does not support multiple connections at the same time. In order to 
-accomplish that, you'll need to thread your clients in the server. More about this in lab #4. 
+Note that in this lab, your server only support one client connection at a time. It does not support multiple 
+connections at the same time. That functionality will be added in lab 4 
 
 Now that you completed this lab and have a basic understanding about how TCP clients and server work, 
 you can get started with the TCP Centralized Client-Server project 
