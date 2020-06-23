@@ -41,14 +41,14 @@ shows one of the easiest way of implementing that functionality.
 from threading import Thread 
 from client_handler import ClientHandler
 
-def handler(self, clienthandler):
+def handler(self, clienthandler, addr):
     # do something with the clienthandler (i.e send data to the client)
     pass
 
 def accept_clients():
     while True:
         clientsocket, addr = serversocket.accept()
-        Thread(target=thread_client, args=(clientsocket, addr)).start() # client thread started   
+        Thread(target=handler, args=(clientsocket, addr)).start() # client thread started   
 ```
 
 The above code creates a thread of the handler method that is handling a specific client. That way, clients
