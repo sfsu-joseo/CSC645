@@ -47,7 +47,7 @@ class ClientHandler:
 
     def send(self, data):
         serialized_data = pickle.dumps(data)
-        self.handler.send(data)
+        self.handler.send(serialized_data)
 
     def receive(self, max_mem_alloc=4096):
         raw_data = self.handler.recv(max_mem_alloc)
