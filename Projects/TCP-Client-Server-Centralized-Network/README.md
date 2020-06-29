@@ -140,9 +140,6 @@ A user selecting option 4 will create a new chat room for other users to join. I
 
 ```
 Your option <enter a number>: 4
-
-Enter new room id: 3456
-Your option <enter a number>: 4
 Enter new chat room id: 23456
 
 ----------------------- Chat Room 23456 ------------------------ 
